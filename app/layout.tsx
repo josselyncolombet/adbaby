@@ -10,7 +10,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://adbaby.xyz"),
+  metadataBase: new URL("https://activedirectorybaby.xyz"),
   title: {
     default: "Ad baby",
     template: "%s · Ad baby",
