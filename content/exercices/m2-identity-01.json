@@ -1,0 +1,31 @@
+{
+  "id": "m2-identity-01",
+  "module": 2,
+  "ordre": 1,
+  "titre": "Lire un compte par samAccountName",
+  "difficulte": "facile",
+  "concepts": [
+    "Get-ADUser",
+    "-Identity"
+  ],
+  "contexte": "La directrice s'appelle Julie Dupont, son samAccountName est `j.dupont`.",
+  "enonce": "Affiche les informations du compte de Julie Dupont avec `-Identity`.",
+  "indices": [
+    "Cmdlet : `Get-ADUser`.",
+    "Paramètre : `-Identity <samAccountName>`.",
+    "Solution : `Get-ADUser -Identity j.dupont`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "j.dupont"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

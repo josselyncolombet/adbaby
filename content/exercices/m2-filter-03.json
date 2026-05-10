@@ -1,0 +1,32 @@
+{
+  "id": "m2-filter-03",
+  "module": 2,
+  "ordre": 6,
+  "titre": "Filtrer par département",
+  "difficulte": "difficile",
+  "concepts": [
+    "Get-ADUser",
+    "Filter Department"
+  ],
+  "contexte": "Le service Compta a besoin d'un export de ses comptes.",
+  "enonce": "Liste les comptes du département `Compta`.",
+  "indices": [
+    "`-Filter { Department -eq \"Compta\" }`.",
+    "Le service est exactement 'Compta' (casse non sensible).",
+    "Solution : `Get-ADUser -Filter { Department -eq \"Compta\" }`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "p.martin",
+      "stage.compta"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

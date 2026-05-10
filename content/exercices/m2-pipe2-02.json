@@ -1,0 +1,31 @@
+{
+  "id": "m2-pipe2-02",
+  "module": 2,
+  "ordre": 14,
+  "titre": "Trier par dernière connexion",
+  "difficulte": "moyen",
+  "concepts": [
+    "Sort-Object"
+  ],
+  "contexte": "Pour un audit d'inactivité, tu veux les comptes du plus ancien au plus récent.",
+  "enonce": "Trie les comptes par `LastLogonDate` croissant.",
+  "indices": [
+    "Demander LastLogonDate via -Properties.",
+    "Pipe vers `Sort-Object LastLogonDate`.",
+    "Pas besoin de `-Descending`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "m.bernard",
+      "l.dubois"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

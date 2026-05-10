@@ -1,0 +1,28 @@
+{
+  "id": "m3-disable-01",
+  "module": 3,
+  "ordre": 7,
+  "titre": "Désactiver un compte (départ)",
+  "difficulte": "facile",
+  "concepts": [
+    "Disable-ADAccount"
+  ],
+  "contexte": "Camille Rousseau quitte la PME. Première étape : désactiver son compte.",
+  "enonce": "Désactive le compte `c.rousseau`.",
+  "indices": [
+    "`Disable-ADAccount -Identity c.rousseau`.",
+    "On ne supprime jamais directement.",
+    "On désactive d'abord, on supprime au bout de N mois."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Disable-ADAccount -Identity c.rousseau"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

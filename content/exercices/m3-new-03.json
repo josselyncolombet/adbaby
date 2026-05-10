@@ -1,0 +1,29 @@
+{
+  "id": "m3-new-03",
+  "module": 3,
+  "ordre": 3,
+  "titre": "Créer un compte de stagiaire dans la bonne OU",
+  "difficulte": "difficile",
+  "concepts": [
+    "New-ADUser",
+    "OU spécifique"
+  ],
+  "contexte": "Une nouvelle stagiaire `Inès Roy` arrive en Commercial. Convention : `i.roy`, créée dans `OU=Commercial`.",
+  "enonce": "Crée le compte avec UPN `i.roy@pme.local`, Title `Stagiaire`, Department `Commercial`.",
+  "indices": [
+    "Penser au -UserPrincipalName.",
+    "OU cible : `OU=Commercial,DC=pme,DC=local`.",
+    "Activer le compte."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "New-ADUser -SamAccountName i.roy -Name \"Inès Roy\" -UserPrincipalName i.roy@pme.local -Title Stagiaire -Department Commercial -Path \"OU=Commercial,DC=pme,DC=local\" -Enabled $true"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

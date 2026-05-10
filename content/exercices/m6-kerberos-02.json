@@ -1,0 +1,47 @@
+{
+  "id": "m6-kerberos-02",
+  "module": 6,
+  "ordre": 17,
+  "titre": "TGT vs TGS : ordre",
+  "difficulte": "moyen",
+  "concepts": [
+    "Kerberos",
+    "TGT",
+    "TGS"
+  ],
+  "contexte": "Tu schématises le flux Kerberos pour ton rapport.",
+  "enonce": "Quel ticket l'utilisateur reçoit-il en premier après l'authentification ?",
+  "indices": [
+    "TGT = Ticket Granting Ticket, délivré par le KDC à l'authentification.",
+    "TGS = Ticket Granting Service, délivré ensuite pour chaque service.",
+    "Ordre : TGT d'abord (preuve d'identité), puis TGS (preuve d'autorisation pour service)."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "tgt",
+        "label": "TGT (Ticket Granting Ticket)"
+      },
+      {
+        "value": "tgs",
+        "label": "TGS (Ticket Granting Service)"
+      },
+      {
+        "value": "nt",
+        "label": "Un hash NTLM"
+      },
+      {
+        "value": "session",
+        "label": "Une clé de session AES"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "tgt"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m8-wef-02",
+  "module": 8,
+  "ordre": 17,
+  "titre": "Push (source-initiated) vs Pull (collector-initiated)",
+  "difficulte": "moyen",
+  "concepts": [
+    "WEF",
+    "Architecture"
+  ],
+  "contexte": "Tu déploies WEF sur un parc 200 postes en agence, dont 50 derrière un pare-feu strict (ports sortants limités).",
+  "enonce": "Quel mode WEF privilégier dans ce cas ?",
+  "indices": [
+    "Pull (collector-initiated) : le collecteur va chercher, donc ports entrants à ouvrir sur chaque poste.",
+    "Push (source-initiated) : le poste pousse, donc un seul port sortant vers le collecteur.",
+    "En pare-feu strict : Push est plus simple (un seul flux sortant à autoriser)."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "push",
+        "label": "Source-initiated (push) — un seul flux sortant à autoriser depuis chaque poste"
+      },
+      {
+        "value": "pull",
+        "label": "Collector-initiated (pull) — il faut ouvrir les ports entrants sur chaque poste"
+      },
+      {
+        "value": "syslog",
+        "label": "Syslog UDP en clair"
+      },
+      {
+        "value": "smb",
+        "label": "Partage SMB sur le DC"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "push"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

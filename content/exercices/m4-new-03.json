@@ -1,0 +1,29 @@
+{
+  "id": "m4-new-03",
+  "module": 4,
+  "ordre": 3,
+  "titre": "Groupe de distribution pour mailing",
+  "difficulte": "difficile",
+  "concepts": [
+    "New-ADGroup",
+    "Distribution"
+  ],
+  "contexte": "On veut une liste de diffusion `M_Toute_PME` (groupe distribution, scope Universal).",
+  "enonce": "Crée le groupe correspondant dans `OU=Groupes,DC=pme,DC=local`.",
+  "indices": [
+    "GroupCategory Distribution (pas Security).",
+    "GroupScope Universal.",
+    "Convention de nom : M_… pour mailing."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "New-ADGroup -Name M_Toute_PME -SamAccountName M_Toute_PME -GroupScope Universal -GroupCategory Distribution -Path \"OU=Groupes,DC=pme,DC=local\""
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

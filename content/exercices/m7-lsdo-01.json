@@ -1,0 +1,46 @@
+{
+  "id": "m7-lsdo-01",
+  "module": 7,
+  "ordre": 1,
+  "titre": "Ordre LSDO",
+  "difficulte": "facile",
+  "concepts": [
+    "GPO",
+    "LSDO"
+  ],
+  "contexte": "Plusieurs GPO s'appliquent à un poste.",
+  "enonce": "Dans quel ordre s'appliquent-elles ?",
+  "indices": [
+    "L = Local.",
+    "S = Site.",
+    "D = Domain, O = OU."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Local → Site → Domaine → OU"
+      },
+      {
+        "value": "ko1",
+        "label": "OU → Domaine → Site → Local"
+      },
+      {
+        "value": "ko2",
+        "label": "Local → Domaine → Site → OU"
+      },
+      {
+        "value": "ko3",
+        "label": "Site → Local → OU → Domaine"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

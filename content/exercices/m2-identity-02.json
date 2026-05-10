@@ -1,0 +1,31 @@
+{
+  "id": "m2-identity-02",
+  "module": 2,
+  "ordre": 2,
+  "titre": "Lire un compte avec attributs étendus",
+  "difficulte": "moyen",
+  "concepts": [
+    "Get-ADUser",
+    "-Properties"
+  ],
+  "contexte": "Tu veux la date de dernière connexion de `s.lefevre`. Par défaut elle n'est pas remontée.",
+  "enonce": "Affiche le compte de `s.lefevre` en demandant `LastLogonDate` via `-Properties`.",
+  "indices": [
+    "Format : `Get-ADUser -Identity <sam> -Properties <attr>`.",
+    "Le résultat doit contenir LastLogonDate.",
+    "Solution : `Get-ADUser -Identity s.lefevre -Properties LastLogonDate`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "s.lefevre"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

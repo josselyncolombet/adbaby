@@ -1,0 +1,34 @@
+{
+  "id": "m5-search-03",
+  "module": 5,
+  "ordre": 12,
+  "titre": "Comptes inactifs depuis 90 jours",
+  "difficulte": "difficile",
+  "concepts": [
+    "Search-ADAccount",
+    "-AccountInactive",
+    "-TimeSpan"
+  ],
+  "contexte": "Audit ANSSI : recenser les comptes qui ne se sont pas connectés depuis ≥ 90 jours.",
+  "enonce": "Liste les comptes inactifs ≥ 90 jours, comptes utilisateurs uniquement.",
+  "indices": [
+    "`Search-ADAccount -AccountInactive -TimeSpan 90 -UsersOnly`.",
+    "Le TimeSpan en jours.",
+    "À l'E7 c'est exactement la consigne PingCastle."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "m.bernard",
+      "l.dubois",
+      "n.legrand"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

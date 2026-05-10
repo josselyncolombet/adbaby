@@ -1,0 +1,29 @@
+{
+  "id": "m5-reset-03",
+  "module": 5,
+  "ordre": 6,
+  "titre": "Reset du compte de service SQL",
+  "difficulte": "difficile",
+  "concepts": [
+    "Set-ADAccountPassword",
+    "Comptes service"
+  ],
+  "contexte": "Le compte `svc.sql` n'a pas changé de mdp depuis 4 ans. C'est une faute d'audit.",
+  "enonce": "Reset le mot de passe de `svc.sql`.",
+  "indices": [
+    "Même cmdlet que pour un user humain.",
+    "Identifier : `svc.sql`.",
+    "En vrai, on enchaîne avec une mise à jour de la chaîne de connexion SQL."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Set-ADAccountPassword -Identity svc.sql -Reset"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

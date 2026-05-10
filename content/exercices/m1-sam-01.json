@@ -1,0 +1,46 @@
+{
+  "id": "m1-sam-01",
+  "module": 1,
+  "ordre": 10,
+  "titre": "samAccountName ou UPN ?",
+  "difficulte": "facile",
+  "concepts": [
+    "samAccountName",
+    "UPN"
+  ],
+  "contexte": "Tu vois ces deux identifiants pour un compte : `j.dupont` et `j.dupont@pme.local`.",
+  "enonce": "Lequel est le samAccountName ?",
+  "indices": [
+    "samAccountName = identifiant style NetBIOS.",
+    "UPN = identifiant style mail (avec un @).",
+    "Réponse : `j.dupont`."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "sam",
+        "label": "j.dupont"
+      },
+      {
+        "value": "upn",
+        "label": "j.dupont@pme.local"
+      },
+      {
+        "value": "ni",
+        "label": "Aucun des deux, c'est un alias"
+      },
+      {
+        "value": "deux",
+        "label": "Les deux sont des UPN"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "sam"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

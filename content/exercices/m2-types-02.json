@@ -1,0 +1,31 @@
+{
+  "id": "m2-types-02",
+  "module": 2,
+  "ordre": 8,
+  "titre": "Lister les postes du domaine",
+  "difficulte": "moyen",
+  "concepts": [
+    "Get-ADComputer"
+  ],
+  "contexte": "Tu veux savoir quels postes sont joints au domaine.",
+  "enonce": "Liste tous les comptes ordinateur.",
+  "indices": [
+    "Cmdlet : `Get-ADComputer`.",
+    "Filter : `*`.",
+    "Solution : `Get-ADComputer -Filter *`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "PC-COMPTA-01",
+      "SRV-FILE-01"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

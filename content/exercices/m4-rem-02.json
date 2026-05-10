@@ -1,0 +1,29 @@
+{
+  "id": "m4-rem-02",
+  "module": 4,
+  "ordre": 8,
+  "titre": "Vider Enterprise Admins",
+  "difficulte": "moyen",
+  "concepts": [
+    "Remove-ADGroupMember",
+    "Enterprise Admins"
+  ],
+  "contexte": "ANSSI : on retire `a.dupont` d'`Enterprise Admins` (à n'utiliser qu'en cas exceptionnel).",
+  "enonce": "Retire `a.dupont` du groupe `Enterprise Admins`.",
+  "indices": [
+    "Group avec espace → guillemets.",
+    "`Remove-ADGroupMember -Identity \"Enterprise Admins\" -Members a.dupont`.",
+    "L'idée : éviter la persistance d'un compte EA."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Remove-ADGroupMember -Identity \"Enterprise Admins\" -Members a.dupont"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

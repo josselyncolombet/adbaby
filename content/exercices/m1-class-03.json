@@ -1,0 +1,46 @@
+{
+  "id": "m1-class-03",
+  "module": 1,
+  "ordre": 15,
+  "titre": "Filtrer par ObjectClass dans la pratique",
+  "difficulte": "difficile",
+  "concepts": [
+    "ObjectClass",
+    "Filter"
+  ],
+  "contexte": "Tu prépares la commande `Get-ADObject` pour ne ramener que les groupes.",
+  "enonce": "Quelle valeur d'ObjectClass utilises-tu dans ton -Filter ?",
+  "indices": [
+    "Le mot-clé exact côté schéma AD pour un groupe.",
+    "C'est tout en minuscules.",
+    "Réponse : `group`."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "group",
+        "label": "group"
+      },
+      {
+        "value": "Group",
+        "label": "Group"
+      },
+      {
+        "value": "ADGroup",
+        "label": "ADGroup"
+      },
+      {
+        "value": "groupOfNames",
+        "label": "groupOfNames"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "group"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

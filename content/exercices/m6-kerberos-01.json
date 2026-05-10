@@ -1,0 +1,46 @@
+{
+  "id": "m6-kerberos-01",
+  "module": 6,
+  "ordre": 16,
+  "titre": "Que signifie KDC ?",
+  "difficulte": "facile",
+  "concepts": [
+    "Kerberos",
+    "KDC"
+  ],
+  "contexte": "Dans la doc Microsoft sur l'authentification Windows.",
+  "enonce": "Que signifie l'acronyme KDC ?",
+  "indices": [
+    "K = Key.",
+    "D = Distribution.",
+    "C = Center."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Key Distribution Center"
+      },
+      {
+        "value": "ko1",
+        "label": "Kerberos Domain Controller"
+      },
+      {
+        "value": "ko2",
+        "label": "Key Domain Cache"
+      },
+      {
+        "value": "ko3",
+        "label": "Kernel Daemon Controller"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

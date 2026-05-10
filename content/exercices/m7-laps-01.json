@@ -1,0 +1,45 @@
+{
+  "id": "m7-laps-01",
+  "module": 7,
+  "ordre": 13,
+  "titre": "Qu'est-ce que LAPS ?",
+  "difficulte": "facile",
+  "concepts": [
+    "LAPS"
+  ],
+  "contexte": "On parle de LAPS dans la doc Microsoft.",
+  "enonce": "Quel est le rôle de LAPS ?",
+  "indices": [
+    "Local Administrator Password Solution.",
+    "Gère le mdp admin local de chaque poste.",
+    "Stocké chiffré dans AD."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Gérer et roter automatiquement le mot de passe administrateur local de chaque poste, stocké dans AD."
+      },
+      {
+        "value": "ko1",
+        "label": "Stocker tous les mots de passe utilisateurs en clair."
+      },
+      {
+        "value": "ko2",
+        "label": "Synchroniser les comptes Linux et Windows."
+      },
+      {
+        "value": "ko3",
+        "label": "Désactiver le compte Administrateur local."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

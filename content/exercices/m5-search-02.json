@@ -1,0 +1,33 @@
+{
+  "id": "m5-search-02",
+  "module": 5,
+  "ordre": 11,
+  "titre": "Comptes désactivés",
+  "difficulte": "moyen",
+  "concepts": [
+    "Search-ADAccount",
+    "-AccountDisabled",
+    "-UsersOnly"
+  ],
+  "contexte": "Tu veux la liste des comptes utilisateurs désactivés (sans les machines désactivées).",
+  "enonce": "Liste les comptes utilisateurs désactivés.",
+  "indices": [
+    "`Search-ADAccount -AccountDisabled -UsersOnly`.",
+    "Le switch `-UsersOnly` exclut les ordinateurs.",
+    "Sans `-UsersOnly`, le résultat peut être pollué."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "m.bernard",
+      "n.legrand"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

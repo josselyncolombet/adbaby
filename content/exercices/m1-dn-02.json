@@ -1,0 +1,46 @@
+{
+  "id": "m1-dn-02",
+  "module": 1,
+  "ordre": 5,
+  "titre": "Construire un DN à partir d'un nom",
+  "difficulte": "moyen",
+  "concepts": [
+    "DN",
+    "construction"
+  ],
+  "contexte": "Tu veux créer un compte `Camille Rousseau` dans l'OU `Commercial` du domaine `pme.local`.",
+  "enonce": "Quel est le DN attendu pour ce compte ?",
+  "indices": [
+    "Format : CN=<nom complet>,OU=<ou>,DC=<comp1>,DC=<comp2>.",
+    "Le nom complet est `Camille Rousseau`, l'OU est `Commercial`.",
+    "Le domaine `pme.local` se traduit en `DC=pme,DC=local`."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "CN=Camille Rousseau,OU=Commercial,DC=pme,DC=local"
+      },
+      {
+        "value": "ko1",
+        "label": "CN=Camille Rousseau,DC=pme,DC=local,OU=Commercial"
+      },
+      {
+        "value": "ko2",
+        "label": "OU=Commercial,CN=Camille Rousseau,DC=pme,DC=local"
+      },
+      {
+        "value": "ko3",
+        "label": "DN=Camille Rousseau,Commercial,pme.local"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "m5-reset-02",
+  "module": 5,
+  "ordre": 5,
+  "titre": "Reset + déverrouiller en même temps",
+  "difficulte": "moyen",
+  "concepts": [
+    "Set-ADAccountPassword",
+    "Unlock"
+  ],
+  "contexte": "Camille Rousseau est verrouillée. Tu lui redonnes un mdp et tu déverrouilles.",
+  "enonce": "Reset le mot de passe de `c.rousseau` (avec -Reset, qui déverrouille aussi dans notre simulateur).",
+  "indices": [
+    "Set-ADAccountPassword -Reset.",
+    "Le compte se déverrouille (LockedOut → false).",
+    "Pas besoin d'Unlock-ADAccount séparé pour cet exo."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Set-ADAccountPassword -Identity c.rousseau -Reset"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

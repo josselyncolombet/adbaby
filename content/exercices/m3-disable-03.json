@@ -1,0 +1,28 @@
+{
+  "id": "m3-disable-03",
+  "module": 3,
+  "ordre": 9,
+  "titre": "Supprimer un compte ex-salarié",
+  "difficulte": "difficile",
+  "concepts": [
+    "Remove-ADUser"
+  ],
+  "contexte": "Nathan Legrand est parti en février 2025. Il est dans `OU=Désactivés` depuis. La direction valide la suppression.",
+  "enonce": "Supprime le compte `n.legrand`.",
+  "indices": [
+    "`Remove-ADUser -Identity n.legrand`.",
+    "Penser à `-Confirm:$false` en script (mais facultatif ici).",
+    "Action irréversible sans corbeille AD."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Remove-ADUser -Identity n.legrand"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

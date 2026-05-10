@@ -1,0 +1,45 @@
+{
+  "id": "m8-evt-02",
+  "module": 8,
+  "ordre": 8,
+  "titre": "Event ID 4740",
+  "difficulte": "moyen",
+  "concepts": [
+    "Event Logs"
+  ],
+  "contexte": "Tu reçois une alerte 'Event 4740'.",
+  "enonce": "Que représente cet event ?",
+  "indices": [
+    "Conséquence d'événements 4625 trop nombreux.",
+    "Compte verrouillé.",
+    "Source à corréler avec un incident."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "lock",
+        "label": "Verrouillage de compte"
+      },
+      {
+        "value": "fail",
+        "label": "Échec d'ouverture de session"
+      },
+      {
+        "value": "delete",
+        "label": "Suppression de compte"
+      },
+      {
+        "value": "rdp",
+        "label": "Connexion RDP"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "lock"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

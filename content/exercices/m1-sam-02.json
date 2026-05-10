@@ -1,0 +1,46 @@
+{
+  "id": "m1-sam-02",
+  "module": 1,
+  "ordre": 11,
+  "titre": "Limite du samAccountName",
+  "difficulte": "moyen",
+  "concepts": [
+    "samAccountName",
+    "longueur"
+  ],
+  "contexte": "Tu veux créer un samAccountName `christophe.de-la-fontaine`.",
+  "enonce": "Combien de caractères au maximum un samAccountName peut-il contenir ?",
+  "indices": [
+    "C'est un identifiant hérité de NetBIOS.",
+    "Il y a une vieille limite historique.",
+    "Réponse : 20 caractères."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "20",
+        "label": "20"
+      },
+      {
+        "value": "64",
+        "label": "64"
+      },
+      {
+        "value": "256",
+        "label": "256"
+      },
+      {
+        "value": "illim",
+        "label": "Illimité"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "20"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

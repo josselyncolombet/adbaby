@@ -1,0 +1,45 @@
+{
+  "id": "m8-wef-01",
+  "module": 8,
+  "ordre": 16,
+  "titre": "Que signifie WEF ?",
+  "difficulte": "facile",
+  "concepts": [
+    "WEF"
+  ],
+  "contexte": "Dans la doc Microsoft sur la centralisation des Event Logs.",
+  "enonce": "Que signifie WEF ?",
+  "indices": [
+    "W = Windows.",
+    "E = Event.",
+    "F = Forwarding."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Windows Event Forwarding"
+      },
+      {
+        "value": "ko1",
+        "label": "Windows Event Filter"
+      },
+      {
+        "value": "ko2",
+        "label": "Windows Encryption Framework"
+      },
+      {
+        "value": "ko3",
+        "label": "Workstation Event Federation"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "m4-agdlp-01",
+  "module": 4,
+  "ordre": 13,
+  "titre": "Sens de A G DL P",
+  "difficulte": "facile",
+  "concepts": [
+    "AGDLP"
+  ],
+  "contexte": "Tu présentes la stratégie AGDLP à un collègue.",
+  "enonce": "Que signifie chaque lettre dans l'ordre ?",
+  "indices": [
+    "A = Account, G = Global group.",
+    "DL = Domain Local group, P = Permissions.",
+    "C'est la chaîne d'imbrication : compte → global → domaine local → permissions."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Account → Global → Domain Local → Permissions"
+      },
+      {
+        "value": "ko1",
+        "label": "Admin → Group → Domain → Privilege"
+      },
+      {
+        "value": "ko2",
+        "label": "Account → GPO → Domain → Permissions"
+      },
+      {
+        "value": "ko3",
+        "label": "Account → Global → Distribution → Permissions"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

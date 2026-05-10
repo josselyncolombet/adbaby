@@ -1,0 +1,46 @@
+{
+  "id": "m6-sd-03",
+  "module": 6,
+  "ordre": 9,
+  "titre": "Remédier à un adminCount résiduel",
+  "difficulte": "difficile",
+  "concepts": [
+    "AdminSDHolder",
+    "Remédiation"
+  ],
+  "contexte": "Tu as identifié 5 comptes ex-admin avec adminCount=1.",
+  "enonce": "Quelle séquence corrige proprement la situation ?",
+  "indices": [
+    "1. Sortir le compte du groupe admin (déjà fait).",
+    "2. Remettre adminCount à 0 ou supprimer l'attribut.",
+    "3. Réactiver l'héritage des ACL sur l'objet."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Vérifier qu'il n'est plus dans aucun groupe admin, supprimer/zéroter l'attribut adminCount, réactiver l'héritage des ACL."
+      },
+      {
+        "value": "ko1",
+        "label": "Désactiver le compte."
+      },
+      {
+        "value": "ko2",
+        "label": "Le supprimer puis le recréer immédiatement."
+      },
+      {
+        "value": "ko3",
+        "label": "Mettre Protected Users."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m6-tier-03",
+  "module": 6,
+  "ordre": 3,
+  "titre": "Quel poste utiliser pour administrer ?",
+  "difficulte": "difficile",
+  "concepts": [
+    "Tier model",
+    "PAW"
+  ],
+  "contexte": "Tu veux séparer ton activité quotidienne et tes opérations admin.",
+  "enonce": "Quelle solution est conforme à la doctrine ANSSI ?",
+  "indices": [
+    "Notion de Privileged Access Workstation (PAW).",
+    "Un poste dédié, durci, sans web ni mail.",
+    "Utilisé uniquement pour les opérations Tier 0/1."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "paw",
+        "label": "Un Privileged Access Workstation (PAW) durci, sans accès web/mail."
+      },
+      {
+        "value": "vm",
+        "label": "Une VM Linux sur ton poste perso."
+      },
+      {
+        "value": "rdp",
+        "label": "Te connecter en RDP au DC depuis ton poste habituel."
+      },
+      {
+        "value": "ssh",
+        "label": "Utiliser SSH avec un mot de passe long."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "paw"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

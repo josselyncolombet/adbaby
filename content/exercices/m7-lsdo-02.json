@@ -1,0 +1,46 @@
+{
+  "id": "m7-lsdo-02",
+  "module": 7,
+  "ordre": 2,
+  "titre": "Conflit entre GPO",
+  "difficulte": "moyen",
+  "concepts": [
+    "GPO",
+    "Conflit"
+  ],
+  "contexte": "Une GPO de domaine définit `MinPasswordLength=8`. Une GPO d'OU définit `MinPasswordLength=14`.",
+  "enonce": "Quelle valeur s'applique sur un poste de l'OU ?",
+  "indices": [
+    "La GPO appliquée en dernier 'gagne'.",
+    "Ordre LSDO : OU vient en dernier.",
+    "Donc 14."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "14",
+        "label": "14"
+      },
+      {
+        "value": "8",
+        "label": "8"
+      },
+      {
+        "value": "moy",
+        "label": "11 (moyenne)"
+      },
+      {
+        "value": "blocked",
+        "label": "La machine refuse de démarrer"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "14"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

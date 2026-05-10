@@ -1,0 +1,45 @@
+{
+  "id": "m6-protected-01",
+  "module": 6,
+  "ordre": 4,
+  "titre": "Que fait Protected Users ?",
+  "difficulte": "facile",
+  "concepts": [
+    "Protected Users"
+  ],
+  "contexte": "Tu places un compte admin dans `Protected Users`.",
+  "enonce": "Quelle est l'une des protections automatiques apportées ?",
+  "indices": [
+    "Pas de cache d'identifiants.",
+    "Pas de NTLM, uniquement Kerberos AES.",
+    "Durée TGT raccourcie."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Pas de mise en cache des identifiants côté poste (donc pas de hash NTLM stocké)."
+      },
+      {
+        "value": "ko1",
+        "label": "Le compte ne peut plus se logger."
+      },
+      {
+        "value": "ko2",
+        "label": "Le compte hérite automatiquement de Domain Admins."
+      },
+      {
+        "value": "ko3",
+        "label": "Le compte voit son mot de passe inchangé même après reset."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

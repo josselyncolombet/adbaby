@@ -1,0 +1,32 @@
+{
+  "id": "m2-filter-02",
+  "module": 2,
+  "ordre": 5,
+  "titre": "Filtrer les comptes désactivés",
+  "difficulte": "moyen",
+  "concepts": [
+    "Get-ADUser",
+    "Filter Enabled"
+  ],
+  "contexte": "Avant de faire le ménage, tu veux la liste des comptes désactivés.",
+  "enonce": "Liste les comptes où `Enabled` vaut `$false`.",
+  "indices": [
+    "`-Filter { Enabled -eq $false }`.",
+    "Note : pas de guillemets autour de $false.",
+    "Solution : `Get-ADUser -Filter { Enabled -eq $false }`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "m.bernard",
+      "n.legrand"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

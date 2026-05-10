@@ -1,0 +1,28 @@
+{
+  "id": "m4-add-01",
+  "module": 4,
+  "ordre": 4,
+  "titre": "Ajouter un membre",
+  "difficulte": "facile",
+  "concepts": [
+    "Add-ADGroupMember"
+  ],
+  "contexte": "Tu veux ajouter `s.lefevre` au groupe `G_Compta`.",
+  "enonce": "Ajoute `s.lefevre` à `G_Compta`.",
+  "indices": [
+    "`Add-ADGroupMember -Identity G_Compta -Members s.lefevre`.",
+    "L'identity = le groupe.",
+    "Members = un ou plusieurs comptes."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Add-ADGroupMember -Identity G_Compta -Members s.lefevre"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

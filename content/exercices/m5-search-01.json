@@ -1,0 +1,31 @@
+{
+  "id": "m5-search-01",
+  "module": 5,
+  "ordre": 10,
+  "titre": "Comptes verrouillés",
+  "difficulte": "facile",
+  "concepts": [
+    "Search-ADAccount",
+    "-LockedOut"
+  ],
+  "contexte": "Audit du matin : qui est verrouillé ?",
+  "enonce": "Liste les comptes verrouillés.",
+  "indices": [
+    "Cmdlet : Search-ADAccount.",
+    "Switch : `-LockedOut`.",
+    "Solution : `Search-ADAccount -LockedOut`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "c.rousseau"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

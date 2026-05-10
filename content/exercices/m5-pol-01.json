@@ -1,0 +1,31 @@
+{
+  "id": "m5-pol-01",
+  "module": 5,
+  "ordre": 1,
+  "titre": "Lire la politique par défaut",
+  "difficulte": "facile",
+  "concepts": [
+    "Get-ADDefaultDomainPasswordPolicy"
+  ],
+  "contexte": "Tu prépares un audit du domaine. Première étape : connaître la politique en vigueur.",
+  "enonce": "Affiche la politique de mots de passe par défaut.",
+  "indices": [
+    "Cmdlet : `Get-ADDefaultDomainPasswordPolicy`.",
+    "Pas de paramètre.",
+    "Le résultat liste MinPasswordLength, ComplexityEnabled, etc."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "MinPasswordLength",
+      "ComplexityEnabled"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

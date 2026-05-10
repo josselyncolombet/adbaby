@@ -1,0 +1,46 @@
+{
+  "id": "m7-laps-02",
+  "module": 7,
+  "ordre": 14,
+  "titre": "Pourquoi LAPS bloque le pass-the-hash",
+  "difficulte": "moyen",
+  "concepts": [
+    "LAPS",
+    "Pass-the-hash"
+  ],
+  "contexte": "Sans LAPS, tous les postes ont souvent le même mot de passe admin local.",
+  "enonce": "Comment LAPS limite-t-il la propagation latérale ?",
+  "indices": [
+    "Mot de passe différent par poste.",
+    "Roté tous les 30 jours.",
+    "Un hash récupéré ne marche que sur ce poste."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Chaque poste a un mot de passe admin local unique et roté ; un hash compromis n'ouvre que ce poste."
+      },
+      {
+        "value": "ko1",
+        "label": "LAPS désactive NTLM partout."
+      },
+      {
+        "value": "ko2",
+        "label": "LAPS bloque les ouvertures de session."
+      },
+      {
+        "value": "ko3",
+        "label": "LAPS supprime les comptes admin locaux."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

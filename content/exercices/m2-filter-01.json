@@ -1,0 +1,40 @@
+{
+  "id": "m2-filter-01",
+  "module": 2,
+  "ordre": 4,
+  "titre": "Lister tous les comptes",
+  "difficulte": "facile",
+  "concepts": [
+    "Get-ADUser",
+    "-Filter *"
+  ],
+  "contexte": "Tu veux la liste exhaustive des comptes du domaine.",
+  "enonce": "Tape la commande qui ramène TOUS les comptes utilisateurs du domaine.",
+  "indices": [
+    "Avec `-Filter`, on peut passer une expression `{...}` ou `*`.",
+    "Pour 'tous', l'idiome est `-Filter *`.",
+    "Solution : `Get-ADUser -Filter *`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "j.dupont",
+      "p.martin",
+      "s.lefevre",
+      "m.bernard",
+      "c.rousseau",
+      "l.dubois",
+      "a.dupont",
+      "stage.compta",
+      "svc.sql",
+      "n.legrand"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

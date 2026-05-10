@@ -1,0 +1,47 @@
+{
+  "id": "m1-ou-03",
+  "module": 1,
+  "ordre": 9,
+  "titre": "Pourquoi imbriquer les OU",
+  "difficulte": "difficile",
+  "concepts": [
+    "OU",
+    "GPO",
+    "héritage"
+  ],
+  "contexte": "Ton chef veut séparer les stagiaires Compta des comptes Compta titulaires, pour leur appliquer une GPO plus restrictive.",
+  "enonce": "Quelle est la solution la plus propre ?",
+  "indices": [
+    "Les GPO se lient à une OU et héritent vers les sous-OU.",
+    "Une sous-OU 'Stagiaires' dans 'Compta' permet une GPO supplémentaire.",
+    "Pas besoin de groupe pour ça."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Créer une sous-OU `OU=Stagiaires,OU=Compta,…` et y lier la GPO restrictive."
+      },
+      {
+        "value": "ko1",
+        "label": "Créer un groupe `G_Stagiaires` et y lier la GPO."
+      },
+      {
+        "value": "ko2",
+        "label": "Renommer les comptes stagiaires avec un préfixe `S_`."
+      },
+      {
+        "value": "ko3",
+        "label": "Mettre un attribut `Description=stagiaire` sur les comptes."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

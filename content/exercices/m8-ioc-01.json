@@ -1,0 +1,54 @@
+{
+  "id": "m8-ioc-01",
+  "module": 8,
+  "ordre": 4,
+  "titre": "Indicateurs d'une compromission",
+  "difficulte": "facile",
+  "concepts": [
+    "IoC"
+  ],
+  "contexte": "Tu fais une revue d'événements sur les 7 derniers jours.",
+  "enonce": "Coche les éléments qui sont des indicateurs de compromission probables.",
+  "indices": [
+    "Connexions admin à des heures inhabituelles.",
+    "Création soudaine de comptes admin.",
+    "Désactivation de Defender via GPO."
+  ],
+  "type": "audit",
+  "donnees": {
+    "anomalies": [
+      {
+        "value": "logon-nuit",
+        "label": "Pic de connexions admin entre 23h et 5h"
+      },
+      {
+        "value": "creation-da",
+        "label": "Création d'un compte placé d'office dans Domain Admins"
+      },
+      {
+        "value": "defender-off",
+        "label": "Désactivation massive de Windows Defender via GPO"
+      },
+      {
+        "value": "smb-scan",
+        "label": "Pic de connexions SMB d'un poste vers tous les autres"
+      },
+      {
+        "value": "user-sleep",
+        "label": "Un utilisateur en arrêt maladie ne se connecte pas pendant 3 jours"
+      }
+    ]
+  },
+  "solution": {
+    "type": "audit",
+    "bonnesReponses": [
+      "logon-nuit",
+      "creation-da",
+      "defender-off",
+      "smb-scan"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

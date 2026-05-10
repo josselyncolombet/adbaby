@@ -1,0 +1,46 @@
+{
+  "id": "m5-pso-03",
+  "module": 5,
+  "ordre": 15,
+  "titre": "Précédence entre deux PSO",
+  "difficulte": "difficile",
+  "concepts": [
+    "PSO",
+    "Précédence"
+  ],
+  "contexte": "Un user a deux PSO qui s'appliquent (via deux groupes différents). PSO1 a Precedence 10, PSO2 Precedence 20.",
+  "enonce": "Lequel s'applique réellement ?",
+  "indices": [
+    "Côté Microsoft : la plus petite valeur de Precedence gagne.",
+    "PSO1 (10) prime sur PSO2 (20).",
+    "Notion contre-intuitive, à connaître pour l'écrit."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "PSO1 (Precedence la plus basse l'emporte)"
+      },
+      {
+        "value": "ko1",
+        "label": "PSO2 (Precedence la plus haute l'emporte)"
+      },
+      {
+        "value": "ko2",
+        "label": "Les deux fusionnent"
+      },
+      {
+        "value": "ko3",
+        "label": "C'est aléatoire"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

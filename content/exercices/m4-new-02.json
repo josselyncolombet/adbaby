@@ -1,0 +1,30 @@
+{
+  "id": "m4-new-02",
+  "module": 4,
+  "ordre": 2,
+  "titre": "Groupe domaine-local pour ressource",
+  "difficulte": "moyen",
+  "concepts": [
+    "New-ADGroup",
+    "DomainLocal",
+    "AGDLP"
+  ],
+  "contexte": "Tu crées `DL_Partage_Compta_RW` pour porter les permissions NTFS sur `\\\\srv-fic\\compta` (lecture/écriture).",
+  "enonce": "Crée `DL_Partage_Compta_RW` domaine-local Security dans `OU=Groupes,DC=pme,DC=local`.",
+  "indices": [
+    "GroupScope DomainLocal.",
+    "Convention de nommage : DL_…_RW.",
+    "Path : OU=Groupes."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "New-ADGroup -Name DL_Partage_Compta_RW -SamAccountName DL_Partage_Compta_RW -GroupScope DomainLocal -GroupCategory Security -Path \"OU=Groupes,DC=pme,DC=local\""
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

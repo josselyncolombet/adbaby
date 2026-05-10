@@ -1,0 +1,31 @@
+{
+  "id": "m2-pipe2-01",
+  "module": 2,
+  "ordre": 13,
+  "titre": "Compter les comptes",
+  "difficulte": "facile",
+  "concepts": [
+    "Measure-Object"
+  ],
+  "contexte": "Tu veux savoir combien de comptes utilisateurs existent.",
+  "enonce": "Affiche le nombre total de comptes via `Measure-Object`.",
+  "indices": [
+    "Pipe : `Get-ADUser -Filter * | Measure-Object`.",
+    "Le résultat affiche `Count`.",
+    "Solution : `Get-ADUser -Filter * | Measure-Object`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "Count",
+      "10"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

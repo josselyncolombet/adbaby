@@ -1,0 +1,244 @@
+{
+  "domain": {
+    "name": "pme.local",
+    "dn": "DC=pme,DC=local",
+    "netbios": "PME",
+    "domainFunctionalLevel": "Windows Server 2019"
+  },
+  "ous": [
+    { "name": "Direction", "dn": "OU=Direction,DC=pme,DC=local", "parentDn": "DC=pme,DC=local" },
+    { "name": "Compta", "dn": "OU=Compta,DC=pme,DC=local", "parentDn": "DC=pme,DC=local" },
+    { "name": "Commercial", "dn": "OU=Commercial,DC=pme,DC=local", "parentDn": "DC=pme,DC=local" },
+    { "name": "Production", "dn": "OU=Production,DC=pme,DC=local", "parentDn": "DC=pme,DC=local" },
+    { "name": "Groupes", "dn": "OU=Groupes,DC=pme,DC=local", "parentDn": "DC=pme,DC=local" },
+    { "name": "Désactivés", "dn": "OU=Désactivés,DC=pme,DC=local", "parentDn": "DC=pme,DC=local" }
+  ],
+  "users": [
+    {
+      "samAccountName": "j.dupont",
+      "name": "Julie Dupont",
+      "givenName": "Julie",
+      "sn": "Dupont",
+      "displayName": "Julie Dupont",
+      "userPrincipalName": "j.dupont@pme.local",
+      "dn": "CN=Julie Dupont,OU=Direction,DC=pme,DC=local",
+      "parentDn": "OU=Direction,DC=pme,DC=local",
+      "enabled": true, "locked": false, "passwordNeverExpires": true,
+      "title": "Directrice", "department": "Direction",
+      "memberOf": ["CN=Domain Admins,CN=Users,DC=pme,DC=local"],
+      "passwordLastSet": "2025-09-01T08:00:00Z",
+      "lastLogonDate": "2026-05-09T17:30:00Z",
+      "whenCreated": "2024-01-15T10:00:00Z"
+    },
+    {
+      "samAccountName": "p.martin",
+      "name": "Pierre Martin",
+      "givenName": "Pierre", "sn": "Martin",
+      "displayName": "Pierre Martin",
+      "userPrincipalName": "p.martin@pme.local",
+      "dn": "CN=Pierre Martin,OU=Compta,DC=pme,DC=local",
+      "parentDn": "OU=Compta,DC=pme,DC=local",
+      "enabled": true, "locked": false, "passwordNeverExpires": false,
+      "title": "Comptable", "department": "Compta",
+      "memberOf": [],
+      "passwordLastSet": "2026-01-12T08:00:00Z",
+      "lastLogonDate": "2026-05-09T16:00:00Z",
+      "whenCreated": "2024-02-20T09:00:00Z"
+    },
+    {
+      "samAccountName": "s.lefevre",
+      "name": "Sophie Lefèvre",
+      "givenName": "Sophie", "sn": "Lefèvre",
+      "displayName": "Sophie Lefèvre",
+      "userPrincipalName": "s.lefevre@pme.local",
+      "dn": "CN=Sophie Lefèvre,OU=Commercial,DC=pme,DC=local",
+      "parentDn": "OU=Commercial,DC=pme,DC=local",
+      "enabled": true, "locked": false, "passwordNeverExpires": false,
+      "title": "Commerciale", "department": "Commercial",
+      "memberOf": [],
+      "passwordLastSet": "2026-02-05T08:00:00Z",
+      "lastLogonDate": "2026-05-09T18:15:00Z",
+      "whenCreated": "2024-03-10T11:00:00Z"
+    },
+    {
+      "samAccountName": "m.bernard",
+      "name": "Marc Bernard",
+      "givenName": "Marc", "sn": "Bernard",
+      "displayName": "Marc Bernard",
+      "userPrincipalName": "m.bernard@pme.local",
+      "dn": "CN=Marc Bernard,OU=Production,DC=pme,DC=local",
+      "parentDn": "OU=Production,DC=pme,DC=local",
+      "enabled": false, "locked": false, "passwordNeverExpires": false,
+      "title": "Technicien", "department": "Production",
+      "memberOf": [],
+      "passwordLastSet": "2025-04-01T08:00:00Z",
+      "lastLogonDate": "2025-09-30T14:00:00Z",
+      "whenCreated": "2024-05-12T09:00:00Z",
+      "description": "Compte désactivé suite départ"
+    },
+    {
+      "samAccountName": "c.rousseau",
+      "name": "Camille Rousseau",
+      "givenName": "Camille", "sn": "Rousseau",
+      "displayName": "Camille Rousseau",
+      "userPrincipalName": "c.rousseau@pme.local",
+      "dn": "CN=Camille Rousseau,OU=Commercial,DC=pme,DC=local",
+      "parentDn": "OU=Commercial,DC=pme,DC=local",
+      "enabled": true, "locked": true, "passwordNeverExpires": false,
+      "title": "Commerciale", "department": "Commercial",
+      "memberOf": [],
+      "passwordLastSet": "2026-04-20T08:00:00Z",
+      "lastLogonDate": "2026-05-08T09:00:00Z",
+      "whenCreated": "2024-06-18T09:00:00Z",
+      "description": "Compte verrouillé"
+    },
+    {
+      "samAccountName": "l.dubois",
+      "name": "Léa Dubois",
+      "givenName": "Léa", "sn": "Dubois",
+      "userPrincipalName": "l.dubois@pme.local",
+      "dn": "CN=Léa Dubois,OU=Production,DC=pme,DC=local",
+      "parentDn": "OU=Production,DC=pme,DC=local",
+      "enabled": true, "locked": false, "passwordNeverExpires": false,
+      "title": "Technicienne", "department": "Production",
+      "memberOf": [],
+      "passwordLastSet": "2025-12-10T08:00:00Z",
+      "lastLogonDate": "2025-11-15T10:00:00Z",
+      "whenCreated": "2023-09-15T09:00:00Z"
+    },
+    {
+      "samAccountName": "a.dupont",
+      "name": "Admin Julie Dupont",
+      "givenName": "Admin", "sn": "Dupont",
+      "userPrincipalName": "a.dupont@pme.local",
+      "dn": "CN=Admin Julie Dupont,OU=Direction,DC=pme,DC=local",
+      "parentDn": "OU=Direction,DC=pme,DC=local",
+      "enabled": true, "locked": false, "passwordNeverExpires": true,
+      "title": "Compte admin",
+      "memberOf": [
+        "CN=Domain Admins,CN=Users,DC=pme,DC=local",
+        "CN=Enterprise Admins,CN=Users,DC=pme,DC=local"
+      ],
+      "passwordLastSet": "2024-01-01T00:00:00Z",
+      "lastLogonDate": "2026-05-09T20:00:00Z",
+      "whenCreated": "2024-01-15T10:00:00Z",
+      "description": "Compte admin secondaire de Julie"
+    },
+    {
+      "samAccountName": "stage.compta",
+      "name": "Stagiaire Compta",
+      "userPrincipalName": "stage.compta@pme.local",
+      "dn": "CN=Stagiaire Compta,OU=Compta,DC=pme,DC=local",
+      "parentDn": "OU=Compta,DC=pme,DC=local",
+      "enabled": true, "locked": false, "passwordNeverExpires": false,
+      "title": "Stagiaire", "department": "Compta",
+      "memberOf": [],
+      "passwordLastSet": "2026-04-15T08:00:00Z",
+      "lastLogonDate": "2026-05-06T17:00:00Z",
+      "whenCreated": "2026-04-15T09:00:00Z",
+      "description": "Stage avril–juin 2026"
+    },
+    {
+      "samAccountName": "svc.sql",
+      "name": "Service SQL",
+      "userPrincipalName": "svc.sql@pme.local",
+      "dn": "CN=Service SQL,OU=Production,DC=pme,DC=local",
+      "parentDn": "OU=Production,DC=pme,DC=local",
+      "enabled": true, "locked": false, "passwordNeverExpires": true,
+      "title": "Compte de service", "department": "Production",
+      "memberOf": [],
+      "passwordLastSet": "2022-06-10T00:00:00Z",
+      "lastLogonDate": "2026-05-09T03:00:00Z",
+      "whenCreated": "2022-06-10T09:00:00Z",
+      "description": "Compte de service SQL Server"
+    },
+    {
+      "samAccountName": "n.legrand",
+      "name": "Nathan Legrand",
+      "givenName": "Nathan", "sn": "Legrand",
+      "userPrincipalName": "n.legrand@pme.local",
+      "dn": "CN=Nathan Legrand,OU=Désactivés,DC=pme,DC=local",
+      "parentDn": "OU=Désactivés,DC=pme,DC=local",
+      "enabled": false, "locked": false, "passwordNeverExpires": false,
+      "title": "ex-Comptable",
+      "memberOf": [],
+      "passwordLastSet": "2024-08-01T08:00:00Z",
+      "lastLogonDate": "2025-02-12T17:00:00Z",
+      "whenCreated": "2022-03-01T09:00:00Z",
+      "description": "Parti en février 2025"
+    }
+  ],
+  "groups": [
+    {
+      "samAccountName": "Domain Admins",
+      "name": "Domain Admins",
+      "dn": "CN=Domain Admins,CN=Users,DC=pme,DC=local",
+      "parentDn": "CN=Users,DC=pme,DC=local",
+      "groupScope": "Global", "groupCategory": "Security",
+      "members": [
+        "CN=Julie Dupont,OU=Direction,DC=pme,DC=local",
+        "CN=Admin Julie Dupont,OU=Direction,DC=pme,DC=local"
+      ],
+      "description": "Administrateurs du domaine"
+    },
+    {
+      "samAccountName": "Enterprise Admins",
+      "name": "Enterprise Admins",
+      "dn": "CN=Enterprise Admins,CN=Users,DC=pme,DC=local",
+      "parentDn": "CN=Users,DC=pme,DC=local",
+      "groupScope": "Universal", "groupCategory": "Security",
+      "members": ["CN=Admin Julie Dupont,OU=Direction,DC=pme,DC=local"],
+      "description": "Administrateurs de la forêt"
+    },
+    {
+      "samAccountName": "Protected Users",
+      "name": "Protected Users",
+      "dn": "CN=Protected Users,CN=Users,DC=pme,DC=local",
+      "parentDn": "CN=Users,DC=pme,DC=local",
+      "groupScope": "Global", "groupCategory": "Security",
+      "members": [],
+      "description": "Comptes protégés (Kerberos durci)"
+    },
+    {
+      "samAccountName": "G_Compta",
+      "name": "G_Compta",
+      "dn": "CN=G_Compta,OU=Groupes,DC=pme,DC=local",
+      "parentDn": "OU=Groupes,DC=pme,DC=local",
+      "groupScope": "Global", "groupCategory": "Security",
+      "members": ["CN=Pierre Martin,OU=Compta,DC=pme,DC=local"],
+      "description": "Groupe global service Compta"
+    }
+  ],
+  "computers": [
+    {
+      "samAccountName": "PC-COMPTA-01$",
+      "name": "PC-COMPTA-01",
+      "dn": "CN=PC-COMPTA-01,OU=Compta,DC=pme,DC=local",
+      "parentDn": "OU=Compta,DC=pme,DC=local",
+      "enabled": true,
+      "operatingSystem": "Windows 11 Pro",
+      "lastLogonDate": "2026-05-09T16:30:00Z"
+    },
+    {
+      "samAccountName": "SRV-FILE-01$",
+      "name": "SRV-FILE-01",
+      "dn": "CN=SRV-FILE-01,OU=Production,DC=pme,DC=local",
+      "parentDn": "OU=Production,DC=pme,DC=local",
+      "enabled": true,
+      "operatingSystem": "Windows Server 2022",
+      "lastLogonDate": "2026-05-09T08:00:00Z"
+    }
+  ],
+  "defaultPasswordPolicy": {
+    "minPasswordLength": 8,
+    "passwordHistoryCount": 5,
+    "maxPasswordAge": 90,
+    "minPasswordAge": 1,
+    "complexityEnabled": true,
+    "reversibleEncryptionEnabled": false,
+    "lockoutThreshold": 0,
+    "lockoutDuration": 30,
+    "lockoutObservationWindow": 30
+  },
+  "now": "2026-05-10T12:00:00Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "m4-add-02",
+  "module": 4,
+  "ordre": 5,
+  "titre": "Ajouter plusieurs membres en une commande",
+  "difficulte": "moyen",
+  "concepts": [
+    "Add-ADGroupMember",
+    "Liste"
+  ],
+  "contexte": "Trois nouveaux salariés rejoignent la Compta : `m.bernard`, `l.dubois` et `c.rousseau`.",
+  "enonce": "Ajoute ces trois comptes à `G_Compta` en une seule commande.",
+  "indices": [
+    "Liste de membres séparés par des virgules.",
+    "`Add-ADGroupMember -Identity G_Compta -Members u1, u2, u3`.",
+    "L'ordre est libre."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Add-ADGroupMember -Identity G_Compta -Members m.bernard, l.dubois, c.rousseau"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

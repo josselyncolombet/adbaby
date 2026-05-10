@@ -1,0 +1,50 @@
+{
+  "id": "m8-cas-03",
+  "module": 8,
+  "ordre": 15,
+  "titre": "Cas synthèse — reconstruction",
+  "difficulte": "difficile",
+  "concepts": [
+    "Cas E7",
+    "Reconstruction"
+  ],
+  "contexte": "L'incident est circonscrit. Tu dois reconstruire l'AD à partir d'une sauvegarde antérieure à l'attaque.",
+  "enonce": "Coche les principes de reconstruction.",
+  "indices": [
+    "Sauvegarde froide immuable (jamais sur le même AD).",
+    "Restaurer DC + reset des secrets KRBTGT 2 fois.",
+    "Renforcer (PAW, MFA, durcissement) AVANT remise en prod."
+  ],
+  "type": "audit",
+  "donnees": {
+    "anomalies": [
+      {
+        "value": "sauvegarde-froide",
+        "label": "Restaurer depuis une sauvegarde froide immuable, jamais sur le même AD"
+      },
+      {
+        "value": "reset-krbtgt",
+        "label": "Réinitialiser le mot de passe du compte KRBTGT (deux fois espacées)"
+      },
+      {
+        "value": "durcir-avant",
+        "label": "Durcir l'AD (Protected Users, LAPS, MFA) avant remise en prod"
+      },
+      {
+        "value": "restore-attaque",
+        "label": "Restaurer la sauvegarde du jour de l'attaque (faux : elle est compromise)"
+      }
+    ]
+  },
+  "solution": {
+    "type": "audit",
+    "bonnesReponses": [
+      "sauvegarde-froide",
+      "reset-krbtgt",
+      "durcir-avant"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

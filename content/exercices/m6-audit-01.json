@@ -1,0 +1,32 @@
+{
+  "id": "m6-audit-01",
+  "module": 6,
+  "ordre": 13,
+  "titre": "Lister les Domain Admins (audit)",
+  "difficulte": "facile",
+  "concepts": [
+    "Get-ADGroupMember",
+    "Audit privilégiés"
+  ],
+  "contexte": "Tu prépares ton tableau d'audit privilégiés.",
+  "enonce": "Liste les membres de `Domain Admins`.",
+  "indices": [
+    "Get-ADGroupMember.",
+    "Identity = \"Domain Admins\".",
+    "Pas besoin d'autre chose pour cet exo."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "j.dupont",
+      "a.dupont"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m6-gmsa-01",
+  "module": 6,
+  "ordre": 10,
+  "titre": "Pourquoi un gMSA ?",
+  "difficulte": "facile",
+  "concepts": [
+    "gMSA",
+    "Comptes service"
+  ],
+  "contexte": "Tu déploies un service SQL sur 3 nœuds en cluster.",
+  "enonce": "Quel type de compte est recommandé ?",
+  "indices": [
+    "Pas un user humain.",
+    "Pas un MSA (1 seul nœud).",
+    "Un gMSA (group MSA) supporte plusieurs hôtes."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "gmsa",
+        "label": "Un Group Managed Service Account (gMSA)"
+      },
+      {
+        "value": "user",
+        "label": "Un compte utilisateur dédié"
+      },
+      {
+        "value": "admin",
+        "label": "Le compte Administrateur du domaine"
+      },
+      {
+        "value": "local",
+        "label": "Un compte local par nœud"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "gmsa"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

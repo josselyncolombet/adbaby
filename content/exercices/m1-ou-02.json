@@ -1,0 +1,46 @@
+{
+  "id": "m1-ou-02",
+  "module": 1,
+  "ordre": 8,
+  "titre": "Combien d'OU parentes ?",
+  "difficulte": "moyen",
+  "concepts": [
+    "OU",
+    "DN"
+  ],
+  "contexte": "Le DN suivant : `CN=stage.compta,OU=Stagiaires,OU=Compta,DC=pme,DC=local`.",
+  "enonce": "Combien d'OU parentes ce compte a-t-il ?",
+  "indices": [
+    "Compte chaque OU=… présent dans le DN.",
+    "Le compte est dans Stagiaires, qui est dans Compta.",
+    "Réponse : 2."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "1",
+        "label": "1"
+      },
+      {
+        "value": "2",
+        "label": "2"
+      },
+      {
+        "value": "3",
+        "label": "3"
+      },
+      {
+        "value": "0",
+        "label": "0 (le compte est sous le domaine)"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "2"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

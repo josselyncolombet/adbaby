@@ -1,0 +1,46 @@
+{
+  "id": "m7-loop-03",
+  "module": 7,
+  "ordre": 12,
+  "titre": "Cas d'usage de Merge",
+  "difficulte": "difficile",
+  "concepts": [
+    "GPO",
+    "Loopback Merge"
+  ],
+  "contexte": "On t'attribue un parc de PC partagés en salle libre-service. Tu veux laisser quelques préférences utilisateur (langue, thème) mais imposer un thème de bureau et des restrictions Office liées au poste.",
+  "enonce": "Quel mode loopback choisir ?",
+  "indices": [
+    "Tu veux conserver une partie de la User Config utilisateur.",
+    "Et superposer celle du poste.",
+    "Merge convient."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "merge",
+        "label": "Merge"
+      },
+      {
+        "value": "replace",
+        "label": "Replace"
+      },
+      {
+        "value": "no",
+        "label": "Pas de loopback du tout"
+      },
+      {
+        "value": "site",
+        "label": "Site policy"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "merge"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

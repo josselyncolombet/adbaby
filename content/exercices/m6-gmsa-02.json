@@ -1,0 +1,45 @@
+{
+  "id": "m6-gmsa-02",
+  "module": 6,
+  "ordre": 11,
+  "titre": "Avantage côté mot de passe",
+  "difficulte": "moyen",
+  "concepts": [
+    "gMSA"
+  ],
+  "contexte": "On compare un compte service classique vs gMSA.",
+  "enonce": "Quel est l'avantage du gMSA pour le mot de passe ?",
+  "indices": [
+    "240 caractères, géré par AD.",
+    "Rotation automatique tous les 30 jours.",
+    "Pas de mdp en clair dans un script."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Mot de passe long, géré et roté automatiquement par AD ; jamais stocké en clair."
+      },
+      {
+        "value": "ko1",
+        "label": "Le mot de passe ne change jamais, c'est plus simple."
+      },
+      {
+        "value": "ko2",
+        "label": "Le mot de passe est partagé entre plusieurs comptes humains."
+      },
+      {
+        "value": "ko3",
+        "label": "Le mot de passe est géré dans Excel."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

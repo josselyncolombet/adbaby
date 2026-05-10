@@ -1,0 +1,45 @@
+{
+  "id": "m8-evt-01",
+  "module": 8,
+  "ordre": 7,
+  "titre": "Event ID 4625",
+  "difficulte": "facile",
+  "concepts": [
+    "Event Logs"
+  ],
+  "contexte": "Sur le DC, tu vois un volume anormal d'events 4625.",
+  "enonce": "Que représente l'event 4625 ?",
+  "indices": [
+    "Échec d'ouverture de session.",
+    "Volume anormal = bruteforce probable.",
+    "À surveiller en bouclant sur les comptes ciblés."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "fail",
+        "label": "Échec d'ouverture de session"
+      },
+      {
+        "value": "ok",
+        "label": "Ouverture de session réussie"
+      },
+      {
+        "value": "lock",
+        "label": "Verrouillage de compte"
+      },
+      {
+        "value": "create",
+        "label": "Création de compte"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "fail"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m8-pc-02",
+  "module": 8,
+  "ordre": 2,
+  "titre": "Règle S-PwdNeverExpires",
+  "difficulte": "moyen",
+  "concepts": [
+    "PingCastle",
+    "Règles"
+  ],
+  "contexte": "PingCastle remonte la règle `S-PwdNeverExpires`.",
+  "enonce": "Que faut-il corriger ?",
+  "indices": [
+    "Comptes avec PasswordNeverExpires=$true.",
+    "Notamment côté admin.",
+    "Set-ADUser -PasswordNeverExpires $false."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Corriger les comptes (notamment admin) dont le mot de passe est paramétré pour ne jamais expirer."
+      },
+      {
+        "value": "ko1",
+        "label": "Désactiver PingCastle."
+      },
+      {
+        "value": "ko2",
+        "label": "Forcer un changement de mdp sur tout le domaine."
+      },
+      {
+        "value": "ko3",
+        "label": "Migrer en Azure AD."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

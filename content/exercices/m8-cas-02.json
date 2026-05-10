@@ -1,0 +1,54 @@
+{
+  "id": "m8-cas-02",
+  "module": 8,
+  "ordre": 14,
+  "titre": "Cas Ville-du-Parc — confinement",
+  "difficulte": "moyen",
+  "concepts": [
+    "Cas E7",
+    "Confinement"
+  ],
+  "contexte": "Rançongiciel détecté à 22h35. Tu prends la main à 22h40.",
+  "enonce": "Coche les actions immédiates de confinement.",
+  "indices": [
+    "Couper la propagation : isoler VLAN.",
+    "Désactiver les comptes compromis.",
+    "NE PAS éteindre brutalement les machines (perte de RAM)."
+  ],
+  "type": "audit",
+  "donnees": {
+    "anomalies": [
+      {
+        "value": "isoler-vlan",
+        "label": "Isoler les VLAN où la propagation est observée"
+      },
+      {
+        "value": "disable-comptes",
+        "label": "Désactiver les comptes admin et comptes compromis"
+      },
+      {
+        "value": "couper-internet",
+        "label": "Couper l'accès Internet sortant des serveurs critiques"
+      },
+      {
+        "value": "eteindre-poste",
+        "label": "Éteindre brutalement les postes (faux : on perd la RAM)"
+      },
+      {
+        "value": "appeler-cnil",
+        "label": "Appeler la CNIL avant tout (faux : pas la priorité H+0)"
+      }
+    ]
+  },
+  "solution": {
+    "type": "audit",
+    "bonnesReponses": [
+      "isoler-vlan",
+      "disable-comptes",
+      "couper-internet"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

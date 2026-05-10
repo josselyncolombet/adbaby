@@ -1,0 +1,28 @@
+{
+  "id": "m3-disable-02",
+  "module": 3,
+  "ordre": 8,
+  "titre": "Réactiver un compte de retour de congé",
+  "difficulte": "moyen",
+  "concepts": [
+    "Enable-ADAccount"
+  ],
+  "contexte": "Marc Bernard, désactivé depuis fin 2025, revient finalement en mission temporaire.",
+  "enonce": "Réactive le compte `m.bernard`.",
+  "indices": [
+    "`Enable-ADAccount -Identity m.bernard`.",
+    "Pas besoin de reset de mdp pour cet exo.",
+    "Tu pourras refaire un Set-ADAccountPassword au module 5."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Enable-ADAccount -Identity m.bernard"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

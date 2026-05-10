@@ -1,0 +1,29 @@
+{
+  "id": "m5-unlock-03",
+  "module": 5,
+  "ordre": 9,
+  "titre": "Audit + Unlock combinés",
+  "difficulte": "difficile",
+  "concepts": [
+    "Search-ADAccount",
+    "Unlock-ADAccount"
+  ],
+  "contexte": "Le helpdesk a 3 comptes verrouillés ce matin (en réalité ici un seul : `c.rousseau`).",
+  "enonce": "Déverrouille `c.rousseau` (l'idée serait, en script, d'utiliser `Search-ADAccount -LockedOut | Unlock-ADAccount`).",
+  "indices": [
+    "Pour cet exo, une commande directe suffit.",
+    "Unlock-ADAccount -Identity c.rousseau.",
+    "En script : `Search-ADAccount -LockedOut | Unlock-ADAccount`."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Unlock-ADAccount -Identity c.rousseau"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

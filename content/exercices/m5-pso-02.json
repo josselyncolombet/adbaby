@@ -1,0 +1,46 @@
+{
+  "id": "m5-pso-02",
+  "module": 5,
+  "ordre": 14,
+  "titre": "À qui s'applique un PSO ?",
+  "difficulte": "moyen",
+  "concepts": [
+    "PSO",
+    "Application"
+  ],
+  "contexte": "Tu crées un PSO pour les admins.",
+  "enonce": "À quoi peut-on attacher un PSO comme cible ?",
+  "indices": [
+    "Pas une OU.",
+    "Un groupe ou un user.",
+    "Le plus propre : un groupe."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "groupe-user",
+        "label": "Un groupe ou un utilisateur"
+      },
+      {
+        "value": "ou",
+        "label": "Une OU"
+      },
+      {
+        "value": "site",
+        "label": "Un site AD"
+      },
+      {
+        "value": "domaine",
+        "label": "Le domaine entier"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "groupe-user"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

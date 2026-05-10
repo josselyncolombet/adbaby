@@ -1,0 +1,46 @@
+{
+  "id": "m6-protected-03",
+  "module": 6,
+  "ordre": 6,
+  "titre": "Limite de Protected Users",
+  "difficulte": "difficile",
+  "concepts": [
+    "Protected Users",
+    "Effets de bord"
+  ],
+  "contexte": "On te dit : 'on met TOUS les comptes dans Protected Users, c'est plus sûr'.",
+  "enonce": "Pourquoi ce n'est pas une bonne idée ?",
+  "indices": [
+    "Désactive le cache → impossible de se logger hors ligne sur portable.",
+    "Désactive certains protocoles utilisés par les apps legacy.",
+    "Impact opérationnel important si appliqué sans tri."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Pas de cache → utilisateurs nomades bloqués hors ligne ; protocoles legacy cassés."
+      },
+      {
+        "value": "ko1",
+        "label": "Aucune limite, faisons-le."
+      },
+      {
+        "value": "ko2",
+        "label": "Cela coûte une licence supplémentaire."
+      },
+      {
+        "value": "ko3",
+        "label": "Il faut un domaine au niveau fonctionnel 2003."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m6-sd-02",
+  "module": 6,
+  "ordre": 8,
+  "titre": "AdminCount = 1",
+  "difficulte": "moyen",
+  "concepts": [
+    "AdminSDHolder",
+    "adminCount"
+  ],
+  "contexte": "Un audit signale `adminCount = 1` sur des comptes qui ne sont plus admin.",
+  "enonce": "Que ça signifie ?",
+  "indices": [
+    "Les comptes ont été admin par le passé.",
+    "Le flag `adminCount` n'est jamais remis à 0 automatiquement.",
+    "Leurs ACL héritent toujours d'AdminSDHolder."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Comptes anciennement admin dont les ACL héritent toujours d'AdminSDHolder ; faute classique d'audit."
+      },
+      {
+        "value": "ko1",
+        "label": "Comptes en cours d'élévation par un attaquant."
+      },
+      {
+        "value": "ko2",
+        "label": "Comptes joints à 1 groupe administratif."
+      },
+      {
+        "value": "ko3",
+        "label": "Comptes avec quota de comptes-machines."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m1-sam-03",
+  "module": 1,
+  "ordre": 12,
+  "titre": "Construire UPN cohérent",
+  "difficulte": "difficile",
+  "concepts": [
+    "UPN",
+    "Convention nommage"
+  ],
+  "contexte": "Convention de la PME : UPN = `prénom.nom@<domaine>`. Tu crées un compte pour `Émilie Bertrand` dans `pme.local`.",
+  "enonce": "Quel UPN est cohérent avec la convention (sans accents) ?",
+  "indices": [
+    "Format : prenom.nom@domaine.",
+    "Sans accents : 'Émilie' → 'emilie', 'Bertrand' → 'bertrand'.",
+    "Réponse : `emilie.bertrand@pme.local`."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "emilie.bertrand@pme.local"
+      },
+      {
+        "value": "ko1",
+        "label": "Émilie.Bertrand@pme.local"
+      },
+      {
+        "value": "ko2",
+        "label": "e.bertrand@PME"
+      },
+      {
+        "value": "ko3",
+        "label": "bertrand.emilie@pme.local"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

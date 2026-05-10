@@ -1,0 +1,29 @@
+{
+  "id": "m5-reset-01",
+  "module": 5,
+  "ordre": 4,
+  "titre": "Reset basique d'un mot de passe",
+  "difficulte": "facile",
+  "concepts": [
+    "Set-ADAccountPassword",
+    "-Reset"
+  ],
+  "contexte": "Pierre Martin a oublié son mot de passe. Tu lui en redonnes un.",
+  "enonce": "Réinitialise le mot de passe de `p.martin` (la commande sans préciser le nouveau mdp est acceptée pour cet exo).",
+  "indices": [
+    "`Set-ADAccountPassword -Identity p.martin -Reset`.",
+    "Pour le runner, le -NewPassword n'est pas exigé.",
+    "L'attribut `passwordLastSet` est mis à jour."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Set-ADAccountPassword -Identity p.martin -Reset"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

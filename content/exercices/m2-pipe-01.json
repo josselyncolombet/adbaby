@@ -1,0 +1,31 @@
+{
+  "id": "m2-pipe-01",
+  "module": 2,
+  "ordre": 10,
+  "titre": "Filtrer côté client avec Where-Object",
+  "difficulte": "facile",
+  "concepts": [
+    "Pipeline",
+    "Where-Object"
+  ],
+  "contexte": "Tu veux les comptes verrouillés. Le -Filter LDAP ne supporte pas `LockedOut` directement.",
+  "enonce": "Récupère tous les comptes puis filtre côté client ceux dont `LockedOut` est `$true`.",
+  "indices": [
+    "Pipe : `Get-ADUser -Filter * | Where-Object { ... }`.",
+    "Référence à l'objet courant : `$_`.",
+    "Solution : `Get-ADUser -Filter * | Where-Object { $_.LockedOut -eq $true }`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "c.rousseau"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

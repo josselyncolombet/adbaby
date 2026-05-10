@@ -1,0 +1,34 @@
+{
+  "id": "m2-types-01",
+  "module": 2,
+  "ordre": 7,
+  "titre": "Lister tous les groupes",
+  "difficulte": "facile",
+  "concepts": [
+    "Get-ADGroup",
+    "-Filter *"
+  ],
+  "contexte": "Tu prépares un audit des groupes existants.",
+  "enonce": "Liste tous les groupes du domaine.",
+  "indices": [
+    "Cmdlet : `Get-ADGroup`.",
+    "Filter : `*`.",
+    "Solution : `Get-ADGroup -Filter *`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "Domain Admins",
+      "Enterprise Admins",
+      "Protected Users",
+      "G_Compta"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

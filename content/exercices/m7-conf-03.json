@@ -1,0 +1,46 @@
+{
+  "id": "m7-conf-03",
+  "module": 7,
+  "ordre": 6,
+  "titre": "Conflit Computer vs User",
+  "difficulte": "difficile",
+  "concepts": [
+    "GPO",
+    "Précédence"
+  ],
+  "contexte": "Une politique Computer fixe un proxy `proxy:8080`. Une User Config dit `direct`.",
+  "enonce": "Sans loopback, qui gagne ?",
+  "indices": [
+    "Computer prime en cas de conflit.",
+    "Sauf si loopback est activé.",
+    "Ici pas de loopback : la valeur Computer s'applique."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "computer",
+        "label": "Computer (proxy:8080)"
+      },
+      {
+        "value": "user",
+        "label": "User (direct)"
+      },
+      {
+        "value": "merge",
+        "label": "Les deux fusionnent"
+      },
+      {
+        "value": "ignore",
+        "label": "Aucun ne s'applique"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "computer"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

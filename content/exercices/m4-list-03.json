@@ -1,0 +1,32 @@
+{
+  "id": "m4-list-03",
+  "module": 4,
+  "ordre": 12,
+  "titre": "Compter les membres d'un groupe",
+  "difficulte": "difficile",
+  "concepts": [
+    "Get-ADGroupMember",
+    "Measure-Object"
+  ],
+  "contexte": "Combien de comptes admin (Domain Admins) ?",
+  "enonce": "Compte les membres de `Domain Admins`.",
+  "indices": [
+    "Pipe vers Measure-Object.",
+    "`Get-ADGroupMember \"Domain Admins\" | Measure-Object`.",
+    "Le résultat affiche Count."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "Count",
+      "2"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

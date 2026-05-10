@@ -1,0 +1,46 @@
+{
+  "id": "m8-evt-03",
+  "module": 8,
+  "ordre": 9,
+  "titre": "Event ID 4732 sur un groupe critique",
+  "difficulte": "difficile",
+  "concepts": [
+    "Event Logs",
+    "Privilèges"
+  ],
+  "contexte": "Un event 4732 indique l'ajout d'un membre à un groupe.",
+  "enonce": "Quel cas est le plus critique à surveiller ?",
+  "indices": [
+    "4728 = ajout dans un groupe global.",
+    "4732 = ajout dans un groupe domaine-local.",
+    "Critique : ajout dans Administrators / Domain Admins."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Ajout dans un groupe administratif (Administrators, Domain Admins, …)"
+      },
+      {
+        "value": "ko1",
+        "label": "Ajout dans Domain Users"
+      },
+      {
+        "value": "ko2",
+        "label": "Ajout dans un groupe de distribution mail"
+      },
+      {
+        "value": "ko3",
+        "label": "Ajout dans Authenticated Users"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

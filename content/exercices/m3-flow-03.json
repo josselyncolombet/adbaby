@@ -1,0 +1,29 @@
+{
+  "id": "m3-flow-03",
+  "module": 3,
+  "ordre": 15,
+  "titre": "Workflow départ : étapes combinées",
+  "difficulte": "difficile",
+  "concepts": [
+    "Workflow",
+    "Pipeline d'admin"
+  ],
+  "contexte": "Tu veux faire les deux étapes en une seule session : désactiver puis archiver.",
+  "enonce": "Désactive `stage.compta` et déplace-le vers `OU=Désactivés,DC=pme,DC=local`. Tu peux taper deux commandes séparées.",
+  "indices": [
+    "Sépare avec `;` ou retour ligne.",
+    "1. Disable-ADAccount.",
+    "2. Move-ADObject vers OU=Désactivés."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Disable-ADAccount -Identity stage.compta\nMove-ADObject -Identity \"CN=Stagiaire Compta,OU=Compta,DC=pme,DC=local\" -TargetPath \"OU=Désactivés,DC=pme,DC=local\""
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

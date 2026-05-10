@@ -1,0 +1,30 @@
+{
+  "id": "m4-new-01",
+  "module": 4,
+  "ordre": 1,
+  "titre": "Créer un groupe global Sécurité",
+  "difficulte": "facile",
+  "concepts": [
+    "New-ADGroup",
+    "Global",
+    "Security"
+  ],
+  "contexte": "Tu crées le groupe `G_Direction` pour les membres de la direction.",
+  "enonce": "Crée `G_Direction` global Security dans `OU=Groupes,DC=pme,DC=local`.",
+  "indices": [
+    "`New-ADGroup -Name G_Direction -GroupScope Global -GroupCategory Security -Path ...`.",
+    "Penser à -SamAccountName si différent du Name (ici identique).",
+    "Path = `OU=Groupes,DC=pme,DC=local`."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "New-ADGroup -Name G_Direction -SamAccountName G_Direction -GroupScope Global -GroupCategory Security -Path \"OU=Groupes,DC=pme,DC=local\""
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

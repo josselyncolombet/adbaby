@@ -1,0 +1,46 @@
+{
+  "id": "m8-ioc-02",
+  "module": 8,
+  "ordre": 5,
+  "titre": "Reconnaître la latéralisation",
+  "difficulte": "moyen",
+  "concepts": [
+    "IoC",
+    "Latéralisation"
+  ],
+  "contexte": "Un poste utilisateur ouvre des connexions SMB vers 50 autres postes en 10 minutes.",
+  "enonce": "Comment qualifies-tu ce comportement ?",
+  "indices": [
+    "C'est anormal pour un poste utilisateur.",
+    "Pattern type WannaCry / NotPetya.",
+    "C'est de la propagation latérale."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Une tentative de propagation latérale (worm SMB)"
+      },
+      {
+        "value": "ko1",
+        "label": "Du backup automatique"
+      },
+      {
+        "value": "ko2",
+        "label": "Une mise à jour Windows"
+      },
+      {
+        "value": "ko3",
+        "label": "Un test légitime du support"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

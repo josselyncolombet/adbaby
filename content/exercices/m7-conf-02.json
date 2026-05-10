@@ -1,0 +1,46 @@
+{
+  "id": "m7-conf-02",
+  "module": 7,
+  "ordre": 5,
+  "titre": "Lecteur réseau au login",
+  "difficulte": "moyen",
+  "concepts": [
+    "GPO",
+    "User Configuration"
+  ],
+  "contexte": "Tu mappes le lecteur `Z:` vers `\\\\srv\\compta` à l'ouverture de session.",
+  "enonce": "Computer ou User Configuration ?",
+  "indices": [
+    "Mapping persiste pour l'utilisateur.",
+    "S'applique au login.",
+    "User Configuration."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "user",
+        "label": "User Configuration"
+      },
+      {
+        "value": "computer",
+        "label": "Computer Configuration"
+      },
+      {
+        "value": "both",
+        "label": "Les deux"
+      },
+      {
+        "value": "wmi",
+        "label": "Filtrage WMI"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "user"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

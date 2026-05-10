@@ -1,0 +1,29 @@
+{
+  "id": "m4-rem-03",
+  "module": 4,
+  "ordre": 9,
+  "titre": "Retirer un compte de Domain Admins",
+  "difficulte": "difficile",
+  "concepts": [
+    "Remove-ADGroupMember",
+    "Domain Admins"
+  ],
+  "contexte": "Julie Dupont, en tant que directrice, ne devrait pas avoir un compte humain dans Domain Admins. Son compte admin `a.dupont` y est aussi.",
+  "enonce": "Retire `j.dupont` (compte humain) du groupe `Domain Admins`. On garde `a.dupont` dedans.",
+  "indices": [
+    "Identifie clairement quel compte tu retires (humain ≠ admin).",
+    "Members : juste `j.dupont`.",
+    "Group : Domain Admins (avec guillemets)."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Remove-ADGroupMember -Identity \"Domain Admins\" -Members j.dupont"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

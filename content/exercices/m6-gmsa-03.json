@@ -1,0 +1,46 @@
+{
+  "id": "m6-gmsa-03",
+  "module": 6,
+  "ordre": 12,
+  "titre": "Pré-requis d'un gMSA",
+  "difficulte": "difficile",
+  "concepts": [
+    "gMSA",
+    "Pré-requis"
+  ],
+  "contexte": "Tu prépares la mise en place d'un gMSA dans le domaine.",
+  "enonce": "Quel pré-requis est indispensable côté domaine ?",
+  "indices": [
+    "KDS Root Key.",
+    "À créer une seule fois par forêt.",
+    "Sans elle, pas de gMSA possible."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Une KDS Root Key doit exister dans la forêt (`Add-KdsRootKey`)."
+      },
+      {
+        "value": "ko1",
+        "label": "Une licence Microsoft Premier."
+      },
+      {
+        "value": "ko2",
+        "label": "L'option 'Reversible Encryption' activée."
+      },
+      {
+        "value": "ko3",
+        "label": "Un compte gMSA temporaire pour bootstrap."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

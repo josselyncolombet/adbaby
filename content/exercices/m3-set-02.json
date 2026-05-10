@@ -1,0 +1,29 @@
+{
+  "id": "m3-set-02",
+  "module": 3,
+  "ordre": 5,
+  "titre": "Mettre fin à PasswordNeverExpires",
+  "difficulte": "moyen",
+  "concepts": [
+    "Set-ADUser",
+    "PasswordNeverExpires"
+  ],
+  "contexte": "Audit ANSSI : le compte `j.dupont` a un mdp éternel. Tu dois corriger.",
+  "enonce": "Remets `PasswordNeverExpires` à `$false` sur `j.dupont`.",
+  "indices": [
+    "`Set-ADUser -Identity j.dupont -PasswordNeverExpires $false`.",
+    "Booléens sans guillemets.",
+    "Le compte continue de fonctionner, le mdp expirera selon la politique."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Set-ADUser -Identity j.dupont -PasswordNeverExpires $false"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "m5-pso-01",
+  "module": 5,
+  "ordre": 13,
+  "titre": "Que veut dire PSO ?",
+  "difficulte": "facile",
+  "concepts": [
+    "PSO"
+  ],
+  "contexte": "Le terme PSO est dans la doc Microsoft.",
+  "enonce": "Que signifie PSO ?",
+  "indices": [
+    "P = Password.",
+    "S = Settings.",
+    "O = Object."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Password Settings Object"
+      },
+      {
+        "value": "ko1",
+        "label": "Privileged Security Object"
+      },
+      {
+        "value": "ko2",
+        "label": "Password Synchronization Object"
+      },
+      {
+        "value": "ko3",
+        "label": "Permissive Security Override"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

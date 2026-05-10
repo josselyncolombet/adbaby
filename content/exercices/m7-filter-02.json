@@ -1,0 +1,46 @@
+{
+  "id": "m7-filter-02",
+  "module": 7,
+  "ordre": 8,
+  "titre": "Restreindre à un groupe",
+  "difficulte": "moyen",
+  "concepts": [
+    "GPO",
+    "Security filtering ciblé"
+  ],
+  "contexte": "Tu veux qu'une GPO ne s'applique qu'au groupe `G_Compta`.",
+  "enonce": "Que mets-tu dans Security Filtering ?",
+  "indices": [
+    "Retirer Authenticated Users.",
+    "Ajouter G_Compta avec Apply.",
+    "Et donner Read au groupe (souvent automatique)."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Retirer Authenticated Users, ajouter G_Compta avec Apply Group Policy."
+      },
+      {
+        "value": "ko1",
+        "label": "Ajouter G_Compta dans la délégation seulement."
+      },
+      {
+        "value": "ko2",
+        "label": "Modifier le DN de la GPO."
+      },
+      {
+        "value": "ko3",
+        "label": "Désactiver la GPO et l'activer au login."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

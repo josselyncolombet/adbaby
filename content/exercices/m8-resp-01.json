@@ -1,0 +1,45 @@
+{
+  "id": "m8-resp-01",
+  "module": 8,
+  "ordre": 10,
+  "titre": "Première action sur un compte suspect",
+  "difficulte": "facile",
+  "concepts": [
+    "Réponse incident"
+  ],
+  "contexte": "Tu suspectes que `s.lefevre` est compromis.",
+  "enonce": "Quelle est la *première* action à effectuer ?",
+  "indices": [
+    "Geler le compte (Disable + reset mdp).",
+    "Capturer ensuite les sessions.",
+    "Surtout pas attendre."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "geler",
+        "label": "Geler le compte (Disable-ADAccount puis reset mdp)"
+      },
+      {
+        "value": "supprimer",
+        "label": "Supprimer le compte"
+      },
+      {
+        "value": "ignorer",
+        "label": "Ignorer, attendre confirmation par l'utilisateur"
+      },
+      {
+        "value": "promouvoir",
+        "label": "Le promouvoir Domain Admin pour vérifier"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "geler"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

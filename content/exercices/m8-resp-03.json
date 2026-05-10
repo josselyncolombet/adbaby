@@ -1,0 +1,64 @@
+{
+  "id": "m8-resp-03",
+  "module": 8,
+  "ordre": 12,
+  "titre": "Séquence complète d'un incident",
+  "difficulte": "difficile",
+  "concepts": [
+    "Réponse incident"
+  ],
+  "contexte": "Tu rédiges la procédure incident standard.",
+  "enonce": "Coche les étapes qui doivent figurer dans la séquence.",
+  "indices": [
+    "Geler, capturer, identifier, confiner, restaurer, renforcer.",
+    "L'ordre compte mais la consigne demande la liste.",
+    "Tout doit être présent."
+  ],
+  "type": "audit",
+  "donnees": {
+    "anomalies": [
+      {
+        "value": "geler",
+        "label": "Geler les comptes compromis"
+      },
+      {
+        "value": "capturer",
+        "label": "Capturer les sessions actives, logs, indicateurs"
+      },
+      {
+        "value": "identifier",
+        "label": "Identifier le périmètre (blast radius)"
+      },
+      {
+        "value": "confiner",
+        "label": "Confiner les machines et VLAN compromis"
+      },
+      {
+        "value": "restaurer",
+        "label": "Restaurer depuis sauvegarde froide immuable"
+      },
+      {
+        "value": "renforcer",
+        "label": "Renforcer l'AD (Protected Users, LAPS, MFA)"
+      },
+      {
+        "value": "screenshot",
+        "label": "Faire des captures d'écran pour LinkedIn"
+      }
+    ]
+  },
+  "solution": {
+    "type": "audit",
+    "bonnesReponses": [
+      "geler",
+      "capturer",
+      "identifier",
+      "confiner",
+      "restaurer",
+      "renforcer"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "m3-flow-01",
+  "module": 3,
+  "ordre": 13,
+  "titre": "Workflow départ : étape 1 (désactiver)",
+  "difficulte": "facile",
+  "concepts": [
+    "Workflow",
+    "Disable"
+  ],
+  "contexte": "Camille Rousseau quitte la PME demain. Première étape du workflow standard.",
+  "enonce": "Désactive le compte `c.rousseau`.",
+  "indices": [
+    "Une seule commande à cette étape.",
+    "`Disable-ADAccount -Identity c.rousseau`.",
+    "On verra l'étape suivante au prochain exo."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Disable-ADAccount -Identity c.rousseau"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

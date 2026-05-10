@@ -1,0 +1,50 @@
+{
+  "id": "m8-cas-01",
+  "module": 8,
+  "ordre": 13,
+  "titre": "Cas Clinique Martin — diagnostic",
+  "difficulte": "facile",
+  "concepts": [
+    "Cas E7",
+    "Diagnostic"
+  ],
+  "contexte": "Le rapport PingCastle de la Clinique Martin remonte : `S-PwdNeverExpires` + `A-NotProtectedUsers` + `S-OldNtlm`.",
+  "enonce": "Coche les 3 mesures correspondantes à mettre en oeuvre.",
+  "indices": [
+    "PwdNeverExpires → reset + Set-ADUser sur les comptes admin.",
+    "NotProtectedUsers → Add-ADGroupMember 'Protected Users'.",
+    "OldNtlm → désactiver NTLMv1."
+  ],
+  "type": "audit",
+  "donnees": {
+    "anomalies": [
+      {
+        "value": "fix-pne",
+        "label": "Désactiver PasswordNeverExpires sur les comptes admin"
+      },
+      {
+        "value": "fix-protected",
+        "label": "Ajouter les admins au groupe Protected Users"
+      },
+      {
+        "value": "fix-ntlm",
+        "label": "Désactiver NTLMv1 dans la stratégie de sécurité"
+      },
+      {
+        "value": "reinstall",
+        "label": "Réinstaller Windows sur tous les postes"
+      }
+    ]
+  },
+  "solution": {
+    "type": "audit",
+    "bonnesReponses": [
+      "fix-pne",
+      "fix-protected",
+      "fix-ntlm"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "m3-set-03",
+  "module": 3,
+  "ordre": 6,
+  "titre": "Compléter Description et Department en une commande",
+  "difficulte": "difficile",
+  "concepts": [
+    "Set-ADUser",
+    "multi-attribut"
+  ],
+  "contexte": "Le compte `stage.compta` n'a pas de description claire. Tu veux poser `Description=Stagiaire avril–juin 2026` ET `Title=Stagiaire`.",
+  "enonce": "Mets à jour les deux en une seule commande `Set-ADUser`.",
+  "indices": [
+    "Plusieurs paramètres dans le même appel.",
+    "`Set-ADUser -Identity stage.compta -Description \"...\" -Title \"...\"`.",
+    "Description identique à l'énoncé."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Set-ADUser -Identity stage.compta -Description \"Stagiaire avril–juin 2026\" -Title Stagiaire"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

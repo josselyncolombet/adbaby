@@ -1,0 +1,46 @@
+{
+  "id": "m1-ou-01",
+  "module": 1,
+  "ordre": 7,
+  "titre": "Différence OU vs Groupe",
+  "difficulte": "facile",
+  "concepts": [
+    "OU",
+    "Groupe"
+  ],
+  "contexte": "On te demande la différence entre une OU et un groupe AD.",
+  "enonce": "Laquelle de ces phrases décrit correctement leur rôle ?",
+  "indices": [
+    "OU = conteneur dans l'arbre, sert à appliquer des GPO.",
+    "Groupe = collection d'appartenances pour des permissions.",
+    "Un compte est dans 1 OU mais peut être dans plusieurs groupes."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "L'OU organise l'arbre AD et porte des GPO ; le groupe sert aux permissions."
+      },
+      {
+        "value": "ko1",
+        "label": "L'OU sert aux permissions ; le groupe organise l'arbre."
+      },
+      {
+        "value": "ko2",
+        "label": "OU et groupes sont équivalents."
+      },
+      {
+        "value": "ko3",
+        "label": "Une OU est un compte machine spécial."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m5-unlock-02",
+  "module": 5,
+  "ordre": 8,
+  "titre": "Unlock vs Enable : quelle différence ?",
+  "difficulte": "moyen",
+  "concepts": [
+    "Unlock",
+    "Enable"
+  ],
+  "contexte": "Question vocabulaire : Disable-ADAccount vs Unlock-ADAccount.",
+  "enonce": "Lequel s'applique à un compte qu'on a explicitement désactivé en console ?",
+  "indices": [
+    "Désactivé → Enable-ADAccount pour le réactiver.",
+    "Verrouillé (trop de mauvais mdp) → Unlock-ADAccount.",
+    "Unlock ne réactive pas un compte désactivé."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "enable",
+        "label": "Enable-ADAccount"
+      },
+      {
+        "value": "unlock",
+        "label": "Unlock-ADAccount"
+      },
+      {
+        "value": "set",
+        "label": "Set-ADUser"
+      },
+      {
+        "value": "rien",
+        "label": "Aucun, il faut recréer le compte"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "enable"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

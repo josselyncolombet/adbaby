@@ -1,0 +1,45 @@
+{
+  "id": "m1-class-01",
+  "module": 1,
+  "ordre": 13,
+  "titre": "Lire un ObjectClass",
+  "difficulte": "facile",
+  "concepts": [
+    "ObjectClass"
+  ],
+  "contexte": "Tu lances `Get-ADObject` et tu vois `ObjectClass : computer`.",
+  "enonce": "À quoi correspond cet objet ?",
+  "indices": [
+    "computer = poste/serveur.",
+    "user = compte humain ou service.",
+    "group = groupe."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "comp",
+        "label": "Un poste ou serveur joint au domaine"
+      },
+      {
+        "value": "user",
+        "label": "Un compte utilisateur"
+      },
+      {
+        "value": "grp",
+        "label": "Un groupe AD"
+      },
+      {
+        "value": "ou",
+        "label": "Une unité d'organisation"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "comp"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

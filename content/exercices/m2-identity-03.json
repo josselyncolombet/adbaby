@@ -1,0 +1,31 @@
+{
+  "id": "m2-identity-03",
+  "module": 2,
+  "ordre": 3,
+  "titre": "Lire les groupes d'un compte",
+  "difficulte": "difficile",
+  "concepts": [
+    "Get-ADUser",
+    "MemberOf"
+  ],
+  "contexte": "Tu veux voir à quels groupes appartient `a.dupont` (compte admin de Julie).",
+  "enonce": "Récupère le compte `a.dupont` avec l'attribut `MemberOf`.",
+  "indices": [
+    "MemberOf n'est pas dans les attributs par défaut.",
+    "Il faut le demander via `-Properties MemberOf`.",
+    "`Get-ADUser -Identity a.dupont -Properties MemberOf`"
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "a.dupont"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m1-class-02",
+  "module": 1,
+  "ordre": 14,
+  "titre": "Compte de service vs compte humain",
+  "difficulte": "moyen",
+  "concepts": [
+    "ObjectClass",
+    "Comptes service"
+  ],
+  "contexte": "Un compte `svc.sql` est utilisé par SQL Server pour démarrer son service.",
+  "enonce": "Quel ObjectClass affiche-t-il dans AD ?",
+  "indices": [
+    "Un compte de service est techniquement un user.",
+    "Sa nature 'service' n'est qu'une convention.",
+    "Sauf cas gMSA (managed service account), c'est `user`."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "user",
+        "label": "user"
+      },
+      {
+        "value": "svc",
+        "label": "service"
+      },
+      {
+        "value": "comp",
+        "label": "computer"
+      },
+      {
+        "value": "msa",
+        "label": "msDS-ManagedServiceAccount par défaut"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "user"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

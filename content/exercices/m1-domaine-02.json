@@ -1,0 +1,46 @@
+{
+  "id": "m1-domaine-02",
+  "module": 1,
+  "ordre": 2,
+  "titre": "Réplication entre DCs",
+  "difficulte": "moyen",
+  "concepts": [
+    "Réplication",
+    "Multi-DC"
+  ],
+  "contexte": "L'entreprise a deux DCs : `DC01` et `DC02`. Tu crées un compte sur `DC01`.",
+  "enonce": "Que se passe-t-il pour ce compte du côté de `DC02` ?",
+  "indices": [
+    "Les DCs d'un même domaine se synchronisent automatiquement.",
+    "La réplication est multi-maître côté AD.",
+    "Le compte est répliqué sans action de ta part."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "rep",
+        "label": "Il est répliqué automatiquement par AD"
+      },
+      {
+        "value": "manuel",
+        "label": "Tu dois pousser la réplication manuellement"
+      },
+      {
+        "value": "rien",
+        "label": "Il n'existe que sur DC01"
+      },
+      {
+        "value": "import",
+        "label": "Il faut l'importer via Csv"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "rep"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "m4-rem-01",
+  "module": 4,
+  "ordre": 7,
+  "titre": "Retirer un membre",
+  "difficulte": "facile",
+  "concepts": [
+    "Remove-ADGroupMember"
+  ],
+  "contexte": "Pierre Martin n'est plus en Compta. Tu le retires de `G_Compta`.",
+  "enonce": "Retire `p.martin` de `G_Compta`.",
+  "indices": [
+    "Symétrique de Add-ADGroupMember.",
+    "`Remove-ADGroupMember -Identity G_Compta -Members p.martin`.",
+    "Le compte n'est pas supprimé, juste retiré du groupe."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Remove-ADGroupMember -Identity G_Compta -Members p.martin"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

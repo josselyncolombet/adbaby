@@ -1,0 +1,48 @@
+{
+  "id": "m1-dn-01",
+  "module": 1,
+  "ordre": 4,
+  "titre": "Lire un DN",
+  "difficulte": "facile",
+  "concepts": [
+    "DN",
+    "CN",
+    "OU",
+    "DC"
+  ],
+  "contexte": "Le DN d'un compte est : `CN=Pierre Martin,OU=Compta,DC=pme,DC=local`.",
+  "enonce": "Dans quelle OU est placé ce compte ?",
+  "indices": [
+    "Le DN se lit de gauche (objet) à droite (racine).",
+    "L'OU directement après le CN est l'OU parente.",
+    "Réponse : OU=Compta."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "compta",
+        "label": "OU=Compta"
+      },
+      {
+        "value": "direction",
+        "label": "OU=Direction"
+      },
+      {
+        "value": "dc-pme",
+        "label": "Directement sous DC=pme"
+      },
+      {
+        "value": "users",
+        "label": "CN=Users"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "compta"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

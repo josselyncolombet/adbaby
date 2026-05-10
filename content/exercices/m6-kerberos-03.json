@@ -1,0 +1,47 @@
+{
+  "id": "m6-kerberos-03",
+  "module": 6,
+  "ordre": 18,
+  "titre": "Pourquoi NTLM est faible vs Kerberos",
+  "difficulte": "difficile",
+  "concepts": [
+    "Kerberos",
+    "NTLM",
+    "Pass-the-hash"
+  ],
+  "contexte": "Question d'audit ANSSI : justifier pourquoi NTLM est marqué obsolète.",
+  "enonce": "Quelle est la principale faiblesse de NTLM par rapport à Kerberos ?",
+  "indices": [
+    "Kerberos : authentification mutuelle (client + serveur prouvent leur identité), tickets à durée limitée, anti-rejeu.",
+    "NTLM : authentification unilatérale (serveur ne prouve rien), hash réutilisable = pass-the-hash possible.",
+    "Réponse : NTLM ne fait pas d'authentification mutuelle et expose au pass-the-hash."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Pas d'authentification mutuelle, hash réutilisable → vulnérable au pass-the-hash"
+      },
+      {
+        "value": "ko1",
+        "label": "NTLM ne supporte pas Unicode"
+      },
+      {
+        "value": "ko2",
+        "label": "NTLM consomme plus de bande passante"
+      },
+      {
+        "value": "ko3",
+        "label": "NTLM ne fonctionne pas hors connexion"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

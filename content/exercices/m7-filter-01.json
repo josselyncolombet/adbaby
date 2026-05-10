@@ -1,0 +1,46 @@
+{
+  "id": "m7-filter-01",
+  "module": 7,
+  "ordre": 7,
+  "titre": "Default security filtering",
+  "difficulte": "facile",
+  "concepts": [
+    "GPO",
+    "Filtrage sécurité"
+  ],
+  "contexte": "Une GPO neuve liée à une OU.",
+  "enonce": "À qui s'applique-t-elle par défaut ?",
+  "indices": [
+    "Default = Authenticated Users.",
+    "Tous les utilisateurs et machines authentifiés du domaine.",
+    "Si tu retires ce groupe, plus rien ne s'applique."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "auth",
+        "label": "Authenticated Users (par défaut)"
+      },
+      {
+        "value": "domain-users",
+        "label": "Domain Users uniquement"
+      },
+      {
+        "value": "everyone",
+        "label": "Everyone, anonymous compris"
+      },
+      {
+        "value": "admins",
+        "label": "Domain Admins uniquement"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "auth"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

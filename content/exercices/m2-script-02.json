@@ -1,0 +1,32 @@
+{
+  "id": "m2-script-02",
+  "module": 2,
+  "ordre": 17,
+  "titre": "Adapter un script : passer désactivés → verrouillés",
+  "difficulte": "moyen",
+  "concepts": [
+    "Adapter un script",
+    "Where-Object"
+  ],
+  "contexte": "Ton collègue a écrit un script qui liste les comptes désactivés. Tu dois l'adapter pour qu'il liste les comptes verrouillés à la place.",
+  "enonce": "Modifie le `Where-Object` pour ramener les comptes verrouillés (`LockedOut`).",
+  "indices": [
+    "Garde la structure `Get-ADUser -Filter * | Where-Object { ... }`.",
+    "Remplace `Enabled -eq $false` par `LockedOut -eq $true`.",
+    "Un seul compte est verrouillé dans cet AD."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide",
+    "initialCode": "Get-ADUser -Filter * | Where-Object { $_.Enabled -eq $false }"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "c.rousseau"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

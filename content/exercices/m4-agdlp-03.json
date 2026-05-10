@@ -1,0 +1,46 @@
+{
+  "id": "m4-agdlp-03",
+  "module": 4,
+  "ordre": 15,
+  "titre": "Faute classique d'audit",
+  "difficulte": "difficile",
+  "concepts": [
+    "AGDLP",
+    "Audit"
+  ],
+  "contexte": "Lors d'un audit AD, on relève la configuration suivante : un compte `c.rousseau` est mis directement dans un groupe domaine-local `DL_Partage_RH_RW`.",
+  "enonce": "Pourquoi est-ce une faute du point de vue AGDLP ?",
+  "indices": [
+    "AGDLP impose une chaîne d'imbrication.",
+    "Les comptes vont dans des groupes globaux, pas DL.",
+    "On perd la séparation 'rôle métier' / 'permission technique'."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "On court-circuite le groupe global ; on mélange identité et permission, et on rend l'audit beaucoup plus difficile à grande échelle."
+      },
+      {
+        "value": "ko1",
+        "label": "Aucun problème, c'est juste différent."
+      },
+      {
+        "value": "ko2",
+        "label": "Faute parce qu'un DL ne peut pas avoir de membres."
+      },
+      {
+        "value": "ko3",
+        "label": "Faute parce qu'il faut systématiquement Universal."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

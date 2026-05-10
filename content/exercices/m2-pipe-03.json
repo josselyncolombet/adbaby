@@ -1,0 +1,32 @@
+{
+  "id": "m2-pipe-03",
+  "module": 2,
+  "ordre": 12,
+  "titre": "Comptes Production actifs",
+  "difficulte": "difficile",
+  "concepts": [
+    "Pipeline",
+    "Filter combiné"
+  ],
+  "contexte": "Tu veux la liste des comptes du département Production qui sont actifs (Enabled = true).",
+  "enonce": "Liste les comptes Production actifs (deux conditions).",
+  "indices": [
+    "Tu peux combiner deux conditions avec `-and`.",
+    "Soit dans le -Filter, soit dans Where-Object.",
+    "`Get-ADUser -Filter { Department -eq \"Production\" -and Enabled -eq $true }`"
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "l.dubois",
+      "svc.sql"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

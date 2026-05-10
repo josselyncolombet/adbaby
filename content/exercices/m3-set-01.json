@@ -1,0 +1,29 @@
+{
+  "id": "m3-set-01",
+  "module": 3,
+  "ordre": 4,
+  "titre": "Modifier le titre d'un compte",
+  "difficulte": "facile",
+  "concepts": [
+    "Set-ADUser",
+    "Title"
+  ],
+  "contexte": "Pierre Martin est promu `Responsable Compta`.",
+  "enonce": "Mets à jour son `Title`.",
+  "indices": [
+    "`Set-ADUser -Identity p.martin -Title \"Responsable Compta\"`.",
+    "Pas besoin du -Identity en majuscules.",
+    "Pas de guillemets nécessaires si pas d'espace."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Set-ADUser -Identity p.martin -Title \"Responsable Compta\""
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

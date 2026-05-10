@@ -1,0 +1,28 @@
+{
+  "id": "m5-unlock-01",
+  "module": 5,
+  "ordre": 7,
+  "titre": "Déverrouiller un compte",
+  "difficulte": "facile",
+  "concepts": [
+    "Unlock-ADAccount"
+  ],
+  "contexte": "Camille appelle, son compte est verrouillé après 5 mauvaises tentatives.",
+  "enonce": "Déverrouille `c.rousseau`.",
+  "indices": [
+    "`Unlock-ADAccount -Identity c.rousseau`.",
+    "Cela ne reset pas le mot de passe.",
+    "Le compte reprend tel quel."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Unlock-ADAccount -Identity c.rousseau"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

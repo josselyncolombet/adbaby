@@ -1,0 +1,46 @@
+{
+  "id": "m8-resp-02",
+  "module": 8,
+  "ordre": 11,
+  "titre": "Faute classique du débutant",
+  "difficulte": "moyen",
+  "concepts": [
+    "Réponse incident",
+    "Forensic"
+  ],
+  "contexte": "Le débutant veut 'tout réinitialiser' immédiatement.",
+  "enonce": "Pourquoi reset le mot de passe avant la capture des sessions actives est risqué ?",
+  "indices": [
+    "Cela ferme les sessions actives.",
+    "On perd les indices côté Kerberos.",
+    "Capturer d'abord, puis reset."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "On ferme les sessions actives et on perd les indices côté Kerberos avant de les avoir capturés."
+      },
+      {
+        "value": "ko1",
+        "label": "Cela viole le RGPD."
+      },
+      {
+        "value": "ko2",
+        "label": "Le DC redémarre tout seul."
+      },
+      {
+        "value": "ko3",
+        "label": "Le compte est définitivement bloqué."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

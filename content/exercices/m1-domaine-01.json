@@ -1,0 +1,47 @@
+{
+  "id": "m1-domaine-01",
+  "module": 1,
+  "ordre": 1,
+  "titre": "Domaine, forêt, contrôleur de domaine",
+  "difficulte": "facile",
+  "concepts": [
+    "Domaine",
+    "Forêt",
+    "DC"
+  ],
+  "contexte": "On te confie l'AD d'une PME. Le DNS du domaine est `pme.local`.",
+  "enonce": "Quel terme désigne le serveur qui héberge la base AD et répond aux requêtes LDAP / Kerberos ?",
+  "indices": [
+    "Le domaine est le périmètre logique. Il faut un serveur pour le porter.",
+    "Ce serveur s'appelle le 'contrôleur de domaine'.",
+    "Réponse : DC."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "dc",
+        "label": "Le contrôleur de domaine (DC)"
+      },
+      {
+        "value": "ad",
+        "label": "L'objet domaine"
+      },
+      {
+        "value": "fs",
+        "label": "Le serveur de fichiers"
+      },
+      {
+        "value": "dns",
+        "label": "Le serveur DNS"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "dc"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

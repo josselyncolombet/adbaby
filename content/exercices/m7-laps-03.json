@@ -1,0 +1,46 @@
+{
+  "id": "m7-laps-03",
+  "module": 7,
+  "ordre": 15,
+  "titre": "Qui peut lire le mdp LAPS ?",
+  "difficulte": "difficile",
+  "concepts": [
+    "LAPS",
+    "Délégation"
+  ],
+  "contexte": "Tu veux que seul ton équipe support puisse lire le mdp admin local des postes utilisateurs.",
+  "enonce": "Comment limites-tu cet accès ?",
+  "indices": [
+    "Permissions sur les attributs `ms-Mcs-AdmPwd*`.",
+    "Délégation au groupe support sur l'OU des postes.",
+    "PowerShell : Set-LapsADReadPasswordPermission."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Déléguer le droit de lecture sur l'attribut LAPS de l'OU des postes au groupe support uniquement."
+      },
+      {
+        "value": "ko1",
+        "label": "Mettre LAPS en cache sur chaque poste."
+      },
+      {
+        "value": "ko2",
+        "label": "Donner Domain Admins à tout le support."
+      },
+      {
+        "value": "ko3",
+        "label": "Activer LAPS uniquement la nuit."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

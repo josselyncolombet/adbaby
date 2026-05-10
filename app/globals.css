@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amber: #fbbf24;
+  --color-amber-dim: #e7e5e4;
+  --color-amber-deep: #fbbf24;
+  --color-terminal-bg: #0a0a0a;
+  --color-terminal-dim: #808080;
+  --color-terminal-ok: #9ca3af;
+  --color-terminal-err: #ef5350;
+  --color-terminal-warn: #fbbf24;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  --background: var(--color-terminal-bg);
+  --foreground: #e7e5e4;
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  font-feature-settings: "ss01", "ss02", "cv01";
+}
+
+@layer components {
+  .scanlines {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 3px,
+      rgba(255, 255, 255, 0.03) 3px,
+      rgba(255, 255, 255, 0.03) 4px
+    );
+    opacity: 0.35;
+  }
+
+  .terminal-border {
+    @apply border border-stone-800;
+  }
+
+  .blink-cursor::after {
+    content: "█";
+    color: var(--color-amber);
+    animation: blink 1s steps(2, start) infinite;
+    margin-left: 2px;
+  }
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}

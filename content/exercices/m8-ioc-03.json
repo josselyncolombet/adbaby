@@ -1,0 +1,50 @@
+{
+  "id": "m8-ioc-03",
+  "module": 8,
+  "ordre": 6,
+  "titre": "GPO non autorisée",
+  "difficulte": "difficile",
+  "concepts": [
+    "IoC",
+    "Persistance"
+  ],
+  "contexte": "Sur un audit GPO, tu repères une nouvelle GPO liée au domaine root, créée par un compte stagiaire 2h avant l'incident.",
+  "enonce": "Coche les indicateurs préoccupants.",
+  "indices": [
+    "Création par un compte non admin.",
+    "Liaison au domaine root (large blast radius).",
+    "Timing avant incident."
+  ],
+  "type": "audit",
+  "donnees": {
+    "anomalies": [
+      {
+        "value": "compte-non-admin",
+        "label": "GPO créée par un compte qui n'a normalement pas le droit"
+      },
+      {
+        "value": "domain-root",
+        "label": "Liée au domaine root, donc s'applique partout"
+      },
+      {
+        "value": "timing",
+        "label": "Création peu avant l'incident"
+      },
+      {
+        "value": "nom-banal",
+        "label": "Nom de GPO banal (peu suspect par lui-même)"
+      }
+    ]
+  },
+  "solution": {
+    "type": "audit",
+    "bonnesReponses": [
+      "compte-non-admin",
+      "domain-root",
+      "timing"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

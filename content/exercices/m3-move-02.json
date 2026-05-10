@@ -1,0 +1,29 @@
+{
+  "id": "m3-move-02",
+  "module": 3,
+  "ordre": 11,
+  "titre": "Archiver un compte désactivé",
+  "difficulte": "moyen",
+  "concepts": [
+    "Move-ADObject",
+    "OU=Désactivés"
+  ],
+  "contexte": "Marc Bernard est désactivé. Tu l'archives dans `OU=Désactivés`.",
+  "enonce": "Déplace `m.bernard` (DN actuel `CN=Marc Bernard,OU=Production,DC=pme,DC=local`) vers `OU=Désactivés,DC=pme,DC=local`.",
+  "indices": [
+    "Mêmes paramètres qu'avant.",
+    "Le DN d'identité doit pointer vers le compte actuel.",
+    "Le DN target = OU=Désactivés,DC=pme,DC=local."
+  ],
+  "type": "compare-state",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-state",
+    "reference": "Move-ADObject -Identity \"CN=Marc Bernard,OU=Production,DC=pme,DC=local\" -TargetPath \"OU=Désactivés,DC=pme,DC=local\""
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "m4-list-02",
+  "module": 4,
+  "ordre": 11,
+  "titre": "Lister G_Compta",
+  "difficulte": "moyen",
+  "concepts": [
+    "Get-ADGroupMember"
+  ],
+  "contexte": "Tu veux voir qui est dans `G_Compta` actuellement.",
+  "enonce": "Liste les membres de `G_Compta`.",
+  "indices": [
+    "`Get-ADGroupMember -Identity G_Compta`.",
+    "Le résultat liste les comptes membres.",
+    "Pour cet AD initial, un seul membre y est."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "p.martin"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

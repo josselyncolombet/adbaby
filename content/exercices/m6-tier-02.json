@@ -1,0 +1,46 @@
+{
+  "id": "m6-tier-02",
+  "module": 6,
+  "ordre": 2,
+  "titre": "Faute majeure dans le tier model",
+  "difficulte": "moyen",
+  "concepts": [
+    "Tier model",
+    "Compromission"
+  ],
+  "contexte": "Un admin se connecte en RDP avec son compte Domain Admin sur un poste utilisateur Tier 2.",
+  "enonce": "Pourquoi c'est dangereux ?",
+  "indices": [
+    "Le hash NTLM ou le ticket Kerberos peut rester sur le poste.",
+    "Un attaquant ayant pris la main sur le poste peut le récupérer.",
+    "C'est l'ouverture de la voie au pass-the-hash."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Le hash/ticket peut être récupéré sur le poste compromis et permettre une compromission complète du domaine."
+      },
+      {
+        "value": "ko1",
+        "label": "C'est juste lent."
+      },
+      {
+        "value": "ko2",
+        "label": "Cela viole les licences Windows."
+      },
+      {
+        "value": "ko3",
+        "label": "Cela crée un cookie GPO indésirable."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

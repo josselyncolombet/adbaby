@@ -1,0 +1,46 @@
+{
+  "id": "m7-lsdo-03",
+  "module": 7,
+  "ordre": 3,
+  "titre": "Politique de mot de passe : exception",
+  "difficulte": "difficile",
+  "concepts": [
+    "GPO",
+    "Default Domain Policy"
+  ],
+  "contexte": "On dit en général 'l'OU prime sur le domaine', mais pas pour la politique de mots de passe.",
+  "enonce": "Pourquoi la `MinPasswordLength` définie au niveau du domaine prime-t-elle, peu importe l'OU ?",
+  "indices": [
+    "La politique de mot de passe (account policies) est par défaut un paramètre *de domaine*.",
+    "Elle ne s'applique pas via une GPO d'OU sur les comptes du domaine.",
+    "Pour différencier : il faut un PSO (cf. module 5)."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Les Account Policies (mdp, lockout) ne s'appliquent qu'au niveau du domaine ; pour différencier, on passe par un PSO."
+      },
+      {
+        "value": "ko1",
+        "label": "Bug Windows."
+      },
+      {
+        "value": "ko2",
+        "label": "Parce que le domaine est verrouillé."
+      },
+      {
+        "value": "ko3",
+        "label": "Parce que LSDO est inversé pour les mdp."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m5-pol-02",
+  "module": 5,
+  "ordre": 2,
+  "titre": "Recommandation ANSSI : longueur",
+  "difficulte": "moyen",
+  "concepts": [
+    "Politique",
+    "ANSSI"
+  ],
+  "contexte": "L'ANSSI recommande une longueur minimale de mot de passe ≥ N.",
+  "enonce": "Quelle est la longueur minimale recommandée pour des comptes utilisateurs standards ?",
+  "indices": [
+    "ANSSI guide d'hygiène : 12 caractères pour comptes standards.",
+    "16+ pour comptes admin.",
+    "Réponse demandée : 12."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "8",
+        "label": "8"
+      },
+      {
+        "value": "12",
+        "label": "12"
+      },
+      {
+        "value": "20",
+        "label": "20"
+      },
+      {
+        "value": "32",
+        "label": "32"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "12"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

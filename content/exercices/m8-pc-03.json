@@ -1,0 +1,46 @@
+{
+  "id": "m8-pc-03",
+  "module": 8,
+  "ordre": 3,
+  "titre": "Score acceptable",
+  "difficulte": "difficile",
+  "concepts": [
+    "PingCastle",
+    "Score"
+  ],
+  "contexte": "Selon l'éditeur, un AD bien tenu vise un score PingCastle proche de quel objectif ?",
+  "enonce": "Quel score viser pour un AD considéré comme correctement durci ?",
+  "indices": [
+    "≤ 30 : ok.",
+    "≤ 20 : bien.",
+    "≤ 10 : excellent."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "20",
+        "label": "Score ≤ 20"
+      },
+      {
+        "value": "60",
+        "label": "Score ≤ 60"
+      },
+      {
+        "value": "90",
+        "label": "Score ≤ 90"
+      },
+      {
+        "value": "100",
+        "label": "Score = 100"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "20"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

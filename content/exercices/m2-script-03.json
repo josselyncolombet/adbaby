@@ -1,0 +1,32 @@
+{
+  "id": "m2-script-03",
+  "module": 2,
+  "ordre": 18,
+  "titre": "Adapter un script de surveillance : inactifs ET actifs",
+  "difficulte": "difficile",
+  "concepts": [
+    "Adapter un script",
+    "Pipeline composé"
+  ],
+  "contexte": "Le script de surveillance ramène tous les comptes inactifs depuis 90 jours, mais il inclut aussi les comptes désactivés (faux positifs). Tu dois affiner pour ne garder que les comptes inactifs ET activés (vrais comptes oubliés).",
+  "enonce": "Adapte le script pour exclure les comptes désactivés.",
+  "indices": [
+    "Garde `Search-ADAccount -AccountInactive -TimeSpan 90 -UsersOnly`.",
+    "Ajoute un `Where-Object` pour filtrer `Enabled -eq $true`.",
+    "Solution : `Search-ADAccount -AccountInactive -TimeSpan 90 -UsersOnly | Where-Object { $_.Enabled -eq $true }`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide",
+    "initialCode": "Search-ADAccount -AccountInactive -TimeSpan 90 -UsersOnly"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "l.dubois"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

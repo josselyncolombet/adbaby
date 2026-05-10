@@ -1,0 +1,46 @@
+{
+  "id": "m1-domaine-03",
+  "module": 1,
+  "ordre": 3,
+  "titre": "Forêt vs domaine : où placer Enterprise Admins ?",
+  "difficulte": "difficile",
+  "concepts": [
+    "Forêt",
+    "Enterprise Admins"
+  ],
+  "contexte": "Tu dois expliquer à ton stagiaire la différence entre `Domain Admins` et `Enterprise Admins`.",
+  "enonce": "Quel est le périmètre du groupe `Enterprise Admins` ?",
+  "indices": [
+    "Domain Admins = un domaine.",
+    "Enterprise Admins = au-dessus du domaine.",
+    "Réponse : la forêt entière."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "foret",
+        "label": "Toute la forêt (tous les domaines de la forêt)"
+      },
+      {
+        "value": "domaine",
+        "label": "Le domaine racine uniquement"
+      },
+      {
+        "value": "ou",
+        "label": "Une OU spécifique"
+      },
+      {
+        "value": "site",
+        "label": "Un site AD"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "foret"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "m7-conf-01",
+  "module": 7,
+  "ordre": 4,
+  "titre": "Quelle config pour le pare-feu ?",
+  "difficulte": "facile",
+  "concepts": [
+    "GPO",
+    "Computer Configuration"
+  ],
+  "contexte": "Tu pousses un paramètre 'pare-feu Windows activé' sur tous les postes.",
+  "enonce": "Tu le mets dans la config Computer ou User ?",
+  "indices": [
+    "Le pare-feu est un paramètre du système, pas de l'utilisateur.",
+    "Il s'applique au démarrage du poste.",
+    "Réponse : Computer Configuration."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "computer",
+        "label": "Computer Configuration"
+      },
+      {
+        "value": "user",
+        "label": "User Configuration"
+      },
+      {
+        "value": "both",
+        "label": "Les deux"
+      },
+      {
+        "value": "wmi",
+        "label": "Filtrage WMI uniquement"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "computer"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

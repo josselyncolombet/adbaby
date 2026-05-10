@@ -1,0 +1,45 @@
+{
+  "id": "m6-tier-01",
+  "module": 6,
+  "ordre": 1,
+  "titre": "Niveau d'un Domain Admin",
+  "difficulte": "facile",
+  "concepts": [
+    "Tier model"
+  ],
+  "contexte": "Modèle ANSSI à 3 tiers.",
+  "enonce": "Un compte Domain Admin est dans quel tier ?",
+  "indices": [
+    "Tier 0 = AD/PKI/DC.",
+    "Tier 1 = serveurs membres.",
+    "Tier 2 = postes utilisateurs."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "0",
+        "label": "Tier 0"
+      },
+      {
+        "value": "1",
+        "label": "Tier 1"
+      },
+      {
+        "value": "2",
+        "label": "Tier 2"
+      },
+      {
+        "value": "tous",
+        "label": "Tous les tiers à la fois"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "0"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

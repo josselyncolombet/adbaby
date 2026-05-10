@@ -1,0 +1,50 @@
+{
+  "id": "m6-audit-03",
+  "module": 6,
+  "ordre": 15,
+  "titre": "Constats d'audit privilégiés",
+  "difficulte": "difficile",
+  "concepts": [
+    "Audit",
+    "Multi-anomalies"
+  ],
+  "contexte": "Tu rédiges la page 'Comptes privilégiés' de ton rapport d'audit.",
+  "enonce": "Coche les anomalies que tu observes sur l'AD `pme.local` actuel.",
+  "indices": [
+    "Compte humain (j.dupont) dans Domain Admins.",
+    "Comptes admin avec PasswordNeverExpires=true.",
+    "Aucun compte admin dans Protected Users."
+  ],
+  "type": "audit",
+  "donnees": {
+    "anomalies": [
+      {
+        "value": "humain-da",
+        "label": "Un compte humain (j.dupont) est dans Domain Admins"
+      },
+      {
+        "value": "pne-admin",
+        "label": "Au moins un compte admin a PasswordNeverExpires=$true"
+      },
+      {
+        "value": "pas-protected",
+        "label": "Aucun compte admin n'est dans Protected Users"
+      },
+      {
+        "value": "tous-actifs",
+        "label": "Tous les comptes admin sont activés (faux positif s'il y a des admins inactifs)"
+      }
+    ]
+  },
+  "solution": {
+    "type": "audit",
+    "bonnesReponses": [
+      "humain-da",
+      "pne-admin",
+      "pas-protected"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

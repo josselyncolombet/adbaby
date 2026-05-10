@@ -1,0 +1,46 @@
+{
+  "id": "m7-loop-02",
+  "module": 7,
+  "ordre": 11,
+  "titre": "Replace vs Merge",
+  "difficulte": "moyen",
+  "concepts": [
+    "GPO",
+    "Loopback Replace/Merge"
+  ],
+  "contexte": "Tu hésites entre les deux modes de loopback.",
+  "enonce": "Quel est l'effet de `Replace` ?",
+  "indices": [
+    "Replace = ignore complètement la User Config de l'utilisateur.",
+    "Merge = fusionne, avec priorité au poste en cas de conflit.",
+    "Replace est plus dur."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Ignore totalement la User Config de l'utilisateur ; seule la User Config liée au poste s'applique."
+      },
+      {
+        "value": "ko1",
+        "label": "Fusionne les deux User Config."
+      },
+      {
+        "value": "ko2",
+        "label": "Désactive Computer Config."
+      },
+      {
+        "value": "ko3",
+        "label": "Bascule l'utilisateur en mode hors ligne."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

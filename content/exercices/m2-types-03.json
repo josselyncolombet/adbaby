@@ -1,0 +1,33 @@
+{
+  "id": "m2-types-03",
+  "module": 2,
+  "ordre": 9,
+  "titre": "Lister les OU du domaine",
+  "difficulte": "difficile",
+  "concepts": [
+    "Get-ADOrganizationalUnit"
+  ],
+  "contexte": "Tu veux cartographier la structure organisationnelle de l'AD.",
+  "enonce": "Liste toutes les OU du domaine.",
+  "indices": [
+    "Cmdlet : `Get-ADOrganizationalUnit`.",
+    "Tu dois préciser un -Filter.",
+    "Solution : `Get-ADOrganizationalUnit -Filter *`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "Direction",
+      "Compta",
+      "Commercial",
+      "Production"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

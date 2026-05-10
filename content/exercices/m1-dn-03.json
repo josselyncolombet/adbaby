@@ -1,0 +1,47 @@
+{
+  "id": "m1-dn-03",
+  "module": 1,
+  "ordre": 6,
+  "titre": "DN d'un domaine multi-niveaux",
+  "difficulte": "difficile",
+  "concepts": [
+    "DN",
+    "DC",
+    "sous-domaine"
+  ],
+  "contexte": "Le domaine est `it.entreprise.lan`. Tu places un compte dans `OU=Equipe`.",
+  "enonce": "Quel DN obtiens-tu pour le compte `Lucas Faure` ?",
+  "indices": [
+    "Chaque morceau du nom DNS devient un DC.",
+    "`it.entreprise.lan` donne `DC=it,DC=entreprise,DC=lan`.",
+    "On préfixe avec le CN puis l'OU."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "CN=Lucas Faure,OU=Equipe,DC=it,DC=entreprise,DC=lan"
+      },
+      {
+        "value": "ko1",
+        "label": "CN=Lucas Faure,OU=Equipe,DC=it.entreprise.lan"
+      },
+      {
+        "value": "ko2",
+        "label": "CN=Lucas Faure,OU=Equipe,DC=lan,DC=entreprise,DC=it"
+      },
+      {
+        "value": "ko3",
+        "label": "OU=Equipe,CN=Lucas Faure,DC=entreprise.lan,DC=it"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

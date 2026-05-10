@@ -1,0 +1,46 @@
+{
+  "id": "m4-agdlp-02",
+  "module": 4,
+  "ordre": 14,
+  "titre": "Où mettre les ACL NTFS ?",
+  "difficulte": "moyen",
+  "concepts": [
+    "AGDLP",
+    "ACL"
+  ],
+  "contexte": "Tu donnes l'accès en lecture/écriture à un partage. Sur quel objet poses-tu l'ACL ?",
+  "enonce": "Choisis le bon niveau dans la chaîne AGDLP.",
+  "indices": [
+    "Pas sur le compte directement.",
+    "Pas sur le groupe global.",
+    "Sur le groupe domaine-local (DL_…)."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Sur le groupe domaine-local (DL_)"
+      },
+      {
+        "value": "ko1",
+        "label": "Directement sur le compte"
+      },
+      {
+        "value": "ko2",
+        "label": "Sur le groupe global (G_)"
+      },
+      {
+        "value": "ko3",
+        "label": "Sur l'OU Groupes"
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

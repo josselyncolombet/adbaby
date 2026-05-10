@@ -1,0 +1,33 @@
+{
+  "id": "m2-pipe-02",
+  "module": 2,
+  "ordre": 11,
+  "titre": "Comptes dont le mdp n'expire jamais",
+  "difficulte": "moyen",
+  "concepts": [
+    "Pipeline",
+    "PasswordNeverExpires"
+  ],
+  "contexte": "Audit ANSSI : tu dois lister les comptes avec mdp éternel (à corriger).",
+  "enonce": "Liste les comptes dont `PasswordNeverExpires` est `$true`.",
+  "indices": [
+    "PasswordNeverExpires n'est pas dans les attributs par défaut.",
+    "Il faut le demander via `-Properties PasswordNeverExpires`.",
+    "Puis filtrer avec `Where-Object`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "j.dupont",
+      "a.dupont",
+      "svc.sql"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

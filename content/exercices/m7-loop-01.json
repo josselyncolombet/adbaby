@@ -1,0 +1,46 @@
+{
+  "id": "m7-loop-01",
+  "module": 7,
+  "ordre": 10,
+  "titre": "À quoi sert Loopback ?",
+  "difficulte": "facile",
+  "concepts": [
+    "GPO",
+    "Loopback"
+  ],
+  "contexte": "Tu prépares un parc de bornes en libre-service.",
+  "enonce": "Pourquoi activer le loopback ?",
+  "indices": [
+    "Tu veux que la User Config dépende du *poste* et pas de l'utilisateur.",
+    "Cas typique : salle de classe, borne, kiosque.",
+    "Loopback Replace ou Merge."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Imposer une User Config liée au poste, indépendante de l'utilisateur (kiosque, salle de classe)."
+      },
+      {
+        "value": "ko1",
+        "label": "Améliorer la latence du DC."
+      },
+      {
+        "value": "ko2",
+        "label": "Forcer le redémarrage des postes."
+      },
+      {
+        "value": "ko3",
+        "label": "Désactiver toutes les GPO."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

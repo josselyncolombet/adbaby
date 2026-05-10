@@ -1,0 +1,45 @@
+{
+  "id": "m8-pc-01",
+  "module": 8,
+  "ordre": 1,
+  "titre": "Que fait PingCastle ?",
+  "difficulte": "facile",
+  "concepts": [
+    "PingCastle"
+  ],
+  "contexte": "On te demande d'auditer l'AD avec PingCastle.",
+  "enonce": "Quel est le livrable principal ?",
+  "indices": [
+    "Rapport HTML avec score sur 100.",
+    "Règles classées par sévérité.",
+    "Outil gratuit, standard de marché."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Un rapport HTML avec un score sur 100 et une liste de règles à corriger."
+      },
+      {
+        "value": "ko1",
+        "label": "Une copie de tous les mots de passe en clair."
+      },
+      {
+        "value": "ko2",
+        "label": "Un export Excel des comptes."
+      },
+      {
+        "value": "ko3",
+        "label": "Une mise à jour automatique du domaine."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

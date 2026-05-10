@@ -1,0 +1,46 @@
+{
+  "id": "m7-filter-03",
+  "module": 7,
+  "ordre": 9,
+  "titre": "Faute classique du filtrage",
+  "difficulte": "difficile",
+  "concepts": [
+    "GPO",
+    "Faute audit"
+  ],
+  "contexte": "Un admin a retiré Authenticated Users du Security Filtering pour 'simplifier'.",
+  "enonce": "Que se passe-t-il sur un parc déjà à 200 postes ?",
+  "indices": [
+    "Plus aucun groupe n'a Apply.",
+    "Aucun objet n'applique la GPO.",
+    "Faute typique : on remet Authenticated Users avec uniquement Read pour conserver le pré-requis."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "La GPO ne s'applique plus à personne ; pour cibler un sous-ensemble, il faut laisser Read à Authenticated Users mais retirer Apply, et ajouter Apply au groupe ciblé."
+      },
+      {
+        "value": "ko1",
+        "label": "Rien, tout fonctionne."
+      },
+      {
+        "value": "ko2",
+        "label": "Le DC redémarre."
+      },
+      {
+        "value": "ko3",
+        "label": "Les postes désinstallent Windows."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

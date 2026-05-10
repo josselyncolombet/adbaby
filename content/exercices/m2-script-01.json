@@ -1,0 +1,33 @@
+{
+  "id": "m2-script-01",
+  "module": 2,
+  "ordre": 16,
+  "titre": "Adapter un script : filtrer par département",
+  "difficulte": "facile",
+  "concepts": [
+    "Adapter un script",
+    "Filter Department"
+  ],
+  "contexte": "Le script suivant ramène TOUS les comptes du domaine. Tu dois l'adapter pour ne ramener que ceux du département `Compta`.",
+  "enonce": "Modifie le script pour qu'il ne retourne que les comptes du département Compta.",
+  "indices": [
+    "Ne change pas la cmdlet (`Get-ADUser`).",
+    "Modifie l'argument de `-Filter` pour cibler `Department`.",
+    "Solution : `Get-ADUser -Filter { Department -eq \"Compta\" }`."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide",
+    "initialCode": "Get-ADUser -Filter *"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "p.martin",
+      "stage.compta"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

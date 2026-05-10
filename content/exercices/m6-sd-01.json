@@ -1,0 +1,45 @@
+{
+  "id": "m6-sd-01",
+  "module": 6,
+  "ordre": 7,
+  "titre": "Rôle d'AdminSDHolder",
+  "difficulte": "facile",
+  "concepts": [
+    "AdminSDHolder"
+  ],
+  "contexte": "Tu modifies les ACL d'un compte admin. Une heure après, elles sont revenues à l'état d'avant.",
+  "enonce": "Pourquoi ?",
+  "indices": [
+    "AdminSDHolder est un objet 'modèle' dans CN=System.",
+    "Ses ACL sont recopiées toutes les heures sur les comptes admin.",
+    "C'est volontaire, anti-tampering."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "AdminSDHolder réécrase les ACL des comptes admins toutes les heures (mécanisme SDPROP)."
+      },
+      {
+        "value": "ko1",
+        "label": "Bug Windows, à patcher."
+      },
+      {
+        "value": "ko2",
+        "label": "C'est un effet du tier model."
+      },
+      {
+        "value": "ko3",
+        "label": "Les ACL ont été ajustées par un attaquant."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

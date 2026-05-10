@@ -1,0 +1,33 @@
+{
+  "id": "m6-audit-02",
+  "module": 6,
+  "ordre": 14,
+  "titre": "Détecter PasswordNeverExpires sur admin",
+  "difficulte": "moyen",
+  "concepts": [
+    "Audit",
+    "Pipeline"
+  ],
+  "contexte": "Faute typique : un compte admin avec mot de passe éternel.",
+  "enonce": "Liste les comptes avec `PasswordNeverExpires=$true`.",
+  "indices": [
+    "`-Properties PasswordNeverExpires`.",
+    "Where-Object filtre.",
+    "Ici : 3 comptes, dont a.dupont et j.dupont."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "sams": [
+      "j.dupont",
+      "a.dupont",
+      "svc.sql"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

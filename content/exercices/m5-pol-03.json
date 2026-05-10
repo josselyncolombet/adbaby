@@ -1,0 +1,46 @@
+{
+  "id": "m5-pol-03",
+  "module": 5,
+  "ordre": 3,
+  "titre": "Pourquoi désactiver Reversible Encryption",
+  "difficulte": "difficile",
+  "concepts": [
+    "Politique",
+    "ReversibleEncryption"
+  ],
+  "contexte": "L'audit te signale `ReversibleEncryptionEnabled = True`. Tu dois corriger.",
+  "enonce": "Pourquoi cette option est-elle considérée comme une faute majeure ?",
+  "indices": [
+    "Cette option stocke les mdp d'une façon réversible côté DC.",
+    "Cela revient à les stocker en quasi-clair.",
+    "Un attaquant ayant accès à la base AD récupère les mdp."
+  ],
+  "type": "qcm",
+  "donnees": {
+    "options": [
+      {
+        "value": "ok",
+        "label": "Les mots de passe sont stockés en quasi-clair côté DC ; un accès à la base AD = mots de passe lisibles."
+      },
+      {
+        "value": "ko1",
+        "label": "Ça empêche le SSO."
+      },
+      {
+        "value": "ko2",
+        "label": "Ça augmente le coût Kerberos."
+      },
+      {
+        "value": "ko3",
+        "label": "Ça force tout le monde à changer son mdp tous les 30 jours."
+      }
+    ]
+  },
+  "solution": {
+    "type": "qcm",
+    "bonneReponse": "ok"
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}

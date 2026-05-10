@@ -1,0 +1,34 @@
+{
+  "id": "m2-pipe2-03",
+  "module": 2,
+  "ordre": 15,
+  "titre": "Export ciblé : Name + SamAccountName + Enabled",
+  "difficulte": "difficile",
+  "concepts": [
+    "Select-Object"
+  ],
+  "contexte": "Pour un export CSV, on ne veut que 3 colonnes : Name, SamAccountName, Enabled.",
+  "enonce": "Récupère tous les comptes avec uniquement ces 3 colonnes via `Select-Object`.",
+  "indices": [
+    "`Get-ADUser -Filter * | Select-Object Name, SamAccountName, Enabled`.",
+    "Les noms de propriétés se séparent par des virgules.",
+    "L'ordre des colonnes affichées suit l'ordre passé."
+  ],
+  "type": "compare-output",
+  "donnees": {
+    "snapshot": "pme-vide"
+  },
+  "solution": {
+    "type": "compare-output",
+    "outputContains": [
+      "j.dupont",
+      "p.martin",
+      "s.lefevre",
+      "m.bernard",
+      "c.rousseau"
+    ]
+  },
+  "validation": {
+    "tolerance": "stricte"
+  }
+}
