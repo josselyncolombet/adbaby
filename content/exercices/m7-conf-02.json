@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "user",
-        "label": "User Configuration"
-      },
-      {
-        "value": "computer",
-        "label": "Computer Configuration"
+        "value": "wmi",
+        "label": "Filtrage WMI"
       },
       {
         "value": "both",
         "label": "Les deux"
       },
       {
-        "value": "wmi",
-        "label": "Filtrage WMI"
+        "value": "user",
+        "label": "User Configuration"
+      },
+      {
+        "value": "computer",
+        "label": "Computer Configuration"
       }
     ]
   },

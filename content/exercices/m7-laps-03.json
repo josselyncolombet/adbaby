@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Déléguer le droit de lecture sur l'attribut LAPS de l'OU des postes au groupe support uniquement."
-      },
-      {
-        "value": "ko1",
-        "label": "Mettre LAPS en cache sur chaque poste."
+        "value": "ko3",
+        "label": "Activer LAPS uniquement la nuit."
       },
       {
         "value": "ko2",
         "label": "Donner Domain Admins à tout le support."
       },
       {
-        "value": "ko3",
-        "label": "Activer LAPS uniquement la nuit."
+        "value": "ok",
+        "label": "Déléguer le droit de lecture sur l'attribut LAPS de l'OU des postes au groupe support uniquement."
+      },
+      {
+        "value": "ko1",
+        "label": "Mettre LAPS en cache sur chaque poste."
       }
     ]
   },

@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Pas de cache → utilisateurs nomades bloqués hors ligne ; protocoles legacy cassés."
-      },
-      {
-        "value": "ko1",
-        "label": "Aucune limite, faisons-le."
-      },
-      {
         "value": "ko2",
         "label": "Cela coûte une licence supplémentaire."
       },
       {
         "value": "ko3",
         "label": "Il faut un domaine au niveau fonctionnel 2003."
+      },
+      {
+        "value": "ok",
+        "label": "Pas de cache → utilisateurs nomades bloqués hors ligne ; protocoles legacy cassés."
+      },
+      {
+        "value": "ko1",
+        "label": "Aucune limite, faisons-le."
       }
     ]
   },

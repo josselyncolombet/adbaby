@@ -27,12 +27,12 @@
         "label": "CN=Camille Rousseau,DC=pme,DC=local,OU=Commercial"
       },
       {
-        "value": "ko2",
-        "label": "OU=Commercial,CN=Camille Rousseau,DC=pme,DC=local"
-      },
-      {
         "value": "ko3",
         "label": "DN=Camille Rousseau,Commercial,pme.local"
+      },
+      {
+        "value": "ko2",
+        "label": "OU=Commercial,CN=Camille Rousseau,DC=pme,DC=local"
       }
     ]
   },

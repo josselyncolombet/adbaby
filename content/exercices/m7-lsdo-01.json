@@ -19,10 +19,6 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Local → Site → Domaine → OU"
-      },
-      {
         "value": "ko1",
         "label": "OU → Domaine → Site → Local"
       },
@@ -33,6 +29,10 @@
       {
         "value": "ko3",
         "label": "Site → Local → OU → Domaine"
+      },
+      {
+        "value": "ok",
+        "label": "Local → Site → Domaine → OU"
       }
     ]
   },

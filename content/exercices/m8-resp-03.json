@@ -18,32 +18,32 @@
   "donnees": {
     "anomalies": [
       {
-        "value": "geler",
-        "label": "Geler les comptes compromis"
-      },
-      {
-        "value": "capturer",
-        "label": "Capturer les sessions actives, logs, indicateurs"
-      },
-      {
-        "value": "identifier",
-        "label": "Identifier le périmètre (blast radius)"
-      },
-      {
         "value": "confiner",
         "label": "Confiner les machines et VLAN compromis"
       },
       {
-        "value": "restaurer",
-        "label": "Restaurer depuis sauvegarde froide immuable"
+        "value": "screenshot",
+        "label": "Faire des captures d'écran pour LinkedIn"
+      },
+      {
+        "value": "geler",
+        "label": "Geler les comptes compromis"
       },
       {
         "value": "renforcer",
         "label": "Renforcer l'AD (Protected Users, LAPS, MFA)"
       },
       {
-        "value": "screenshot",
-        "label": "Faire des captures d'écran pour LinkedIn"
+        "value": "identifier",
+        "label": "Identifier le périmètre (blast radius)"
+      },
+      {
+        "value": "capturer",
+        "label": "Capturer les sessions actives, logs, indicateurs"
+      },
+      {
+        "value": "restaurer",
+        "label": "Restaurer depuis sauvegarde froide immuable"
       }
     ]
   },

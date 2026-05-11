@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Imposer une User Config liée au poste, indépendante de l'utilisateur (kiosque, salle de classe)."
-      },
-      {
         "value": "ko1",
         "label": "Améliorer la latence du DC."
+      },
+      {
+        "value": "ko3",
+        "label": "Désactiver toutes les GPO."
       },
       {
         "value": "ko2",
         "label": "Forcer le redémarrage des postes."
       },
       {
-        "value": "ko3",
-        "label": "Désactiver toutes les GPO."
+        "value": "ok",
+        "label": "Imposer une User Config liée au poste, indépendante de l'utilisateur (kiosque, salle de classe)."
       }
     ]
   },

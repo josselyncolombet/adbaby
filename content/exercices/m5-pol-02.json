@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "8",
-        "label": "8"
-      },
-      {
-        "value": "12",
-        "label": "12"
+        "value": "32",
+        "label": "32"
       },
       {
         "value": "20",
         "label": "20"
       },
       {
-        "value": "32",
-        "label": "32"
+        "value": "12",
+        "label": "12"
+      },
+      {
+        "value": "8",
+        "label": "8"
       }
     ]
   },

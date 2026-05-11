@@ -23,16 +23,16 @@
         "label": "14"
       },
       {
-        "value": "8",
-        "label": "8"
+        "value": "blocked",
+        "label": "La machine refuse de démarrer"
       },
       {
         "value": "moy",
         "label": "11 (moyenne)"
       },
       {
-        "value": "blocked",
-        "label": "La machine refuse de démarrer"
+        "value": "8",
+        "label": "8"
       }
     ]
   },

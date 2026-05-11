@@ -19,20 +19,20 @@
   "donnees": {
     "anomalies": [
       {
-        "value": "humain-da",
-        "label": "Un compte humain (j.dupont) est dans Domain Admins"
+        "value": "pas-protected",
+        "label": "Aucun compte admin n'est dans Protected Users"
       },
       {
         "value": "pne-admin",
         "label": "Au moins un compte admin a PasswordNeverExpires=$true"
       },
       {
-        "value": "pas-protected",
-        "label": "Aucun compte admin n'est dans Protected Users"
-      },
-      {
         "value": "tous-actifs",
         "label": "Tous les comptes admin sont activés (faux positif s'il y a des admins inactifs)"
+      },
+      {
+        "value": "humain-da",
+        "label": "Un compte humain (j.dupont) est dans Domain Admins"
       }
     ]
   },

@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "user",
-        "label": "user"
-      },
-      {
-        "value": "svc",
-        "label": "service"
+        "value": "msa",
+        "label": "msDS-ManagedServiceAccount par défaut"
       },
       {
         "value": "comp",
         "label": "computer"
       },
       {
-        "value": "msa",
-        "label": "msDS-ManagedServiceAccount par défaut"
+        "value": "user",
+        "label": "user"
+      },
+      {
+        "value": "svc",
+        "label": "service"
       }
     ]
   },

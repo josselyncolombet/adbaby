@@ -22,16 +22,16 @@
         "label": "Pas de mise en cache des identifiants côté poste (donc pas de hash NTLM stocké)."
       },
       {
-        "value": "ko1",
-        "label": "Le compte ne peut plus se logger."
-      },
-      {
         "value": "ko2",
         "label": "Le compte hérite automatiquement de Domain Admins."
       },
       {
         "value": "ko3",
         "label": "Le compte voit son mot de passe inchangé même après reset."
+      },
+      {
+        "value": "ko1",
+        "label": "Le compte ne peut plus se logger."
       }
     ]
   },

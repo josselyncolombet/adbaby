@@ -19,8 +19,8 @@
   "donnees": {
     "options": [
       {
-        "value": "groupe-user",
-        "label": "Un groupe ou un utilisateur"
+        "value": "domaine",
+        "label": "Le domaine entier"
       },
       {
         "value": "ou",
@@ -31,8 +31,8 @@
         "label": "Un site AD"
       },
       {
-        "value": "domaine",
-        "label": "Le domaine entier"
+        "value": "groupe-user",
+        "label": "Un groupe ou un utilisateur"
       }
     ]
   },

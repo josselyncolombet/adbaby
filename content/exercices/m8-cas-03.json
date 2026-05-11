@@ -19,20 +19,20 @@
   "donnees": {
     "anomalies": [
       {
-        "value": "sauvegarde-froide",
-        "label": "Restaurer depuis une sauvegarde froide immuable, jamais sur le même AD"
+        "value": "durcir-avant",
+        "label": "Durcir l'AD (Protected Users, LAPS, MFA) avant remise en prod"
       },
       {
         "value": "reset-krbtgt",
         "label": "Réinitialiser le mot de passe du compte KRBTGT (deux fois espacées)"
       },
       {
-        "value": "durcir-avant",
-        "label": "Durcir l'AD (Protected Users, LAPS, MFA) avant remise en prod"
-      },
-      {
         "value": "restore-attaque",
         "label": "Restaurer la sauvegarde du jour de l'attaque (faux : elle est compromise)"
+      },
+      {
+        "value": "sauvegarde-froide",
+        "label": "Restaurer depuis une sauvegarde froide immuable, jamais sur le même AD"
       }
     ]
   },

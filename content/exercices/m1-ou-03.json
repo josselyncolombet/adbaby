@@ -20,12 +20,12 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Créer une sous-OU `OU=Stagiaires,OU=Compta,…` et y lier la GPO restrictive."
-      },
-      {
         "value": "ko1",
         "label": "Créer un groupe `G_Stagiaires` et y lier la GPO."
+      },
+      {
+        "value": "ok",
+        "label": "Créer une sous-OU `OU=Stagiaires,OU=Compta,…` et y lier la GPO restrictive."
       },
       {
         "value": "ko2",

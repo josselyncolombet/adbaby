@@ -24,16 +24,16 @@
         "label": "Pas d'authentification mutuelle, hash réutilisable → vulnérable au pass-the-hash"
       },
       {
+        "value": "ko3",
+        "label": "NTLM ne fonctionne pas hors connexion"
+      },
+      {
         "value": "ko1",
         "label": "NTLM ne supporte pas Unicode"
       },
       {
         "value": "ko2",
         "label": "NTLM consomme plus de bande passante"
-      },
-      {
-        "value": "ko3",
-        "label": "NTLM ne fonctionne pas hors connexion"
       }
     ]
   },

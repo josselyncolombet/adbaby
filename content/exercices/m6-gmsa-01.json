@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "gmsa",
-        "label": "Un Group Managed Service Account (gMSA)"
+        "value": "local",
+        "label": "Un compte local par nœud"
       },
       {
-        "value": "user",
-        "label": "Un compte utilisateur dédié"
+        "value": "gmsa",
+        "label": "Un Group Managed Service Account (gMSA)"
       },
       {
         "value": "admin",
         "label": "Le compte Administrateur du domaine"
       },
       {
-        "value": "local",
-        "label": "Un compte local par nœud"
+        "value": "user",
+        "label": "Un compte utilisateur dédié"
       }
     ]
   },

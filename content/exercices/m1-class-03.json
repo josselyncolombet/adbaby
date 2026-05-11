@@ -19,10 +19,6 @@
   "donnees": {
     "options": [
       {
-        "value": "group",
-        "label": "group"
-      },
-      {
         "value": "Group",
         "label": "Group"
       },
@@ -33,6 +29,10 @@
       {
         "value": "groupOfNames",
         "label": "groupOfNames"
+      },
+      {
+        "value": "group",
+        "label": "group"
       }
     ]
   },

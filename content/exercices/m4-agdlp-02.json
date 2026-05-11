@@ -23,16 +23,16 @@
         "label": "Sur le groupe domaine-local (DL_)"
       },
       {
+        "value": "ko3",
+        "label": "Sur l'OU Groupes"
+      },
+      {
         "value": "ko1",
         "label": "Directement sur le compte"
       },
       {
         "value": "ko2",
         "label": "Sur le groupe global (G_)"
-      },
-      {
-        "value": "ko3",
-        "label": "Sur l'OU Groupes"
       }
     ]
   },

@@ -18,20 +18,20 @@
   "donnees": {
     "options": [
       {
-        "value": "geler",
-        "label": "Geler le compte (Disable-ADAccount puis reset mdp)"
-      },
-      {
         "value": "supprimer",
         "label": "Supprimer le compte"
+      },
+      {
+        "value": "promouvoir",
+        "label": "Le promouvoir Domain Admin pour vérifier"
       },
       {
         "value": "ignorer",
         "label": "Ignorer, attendre confirmation par l'utilisateur"
       },
       {
-        "value": "promouvoir",
-        "label": "Le promouvoir Domain Admin pour vérifier"
+        "value": "geler",
+        "label": "Geler le compte (Disable-ADAccount puis reset mdp)"
       }
     ]
   },

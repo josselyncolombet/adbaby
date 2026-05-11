@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
+        "value": "ko2",
+        "label": "Parce que le domaine est verrouillé."
+      },
+      {
         "value": "ok",
         "label": "Les Account Policies (mdp, lockout) ne s'appliquent qu'au niveau du domaine ; pour différencier, on passe par un PSO."
       },
       {
         "value": "ko1",
         "label": "Bug Windows."
-      },
-      {
-        "value": "ko2",
-        "label": "Parce que le domaine est verrouillé."
       },
       {
         "value": "ko3",

@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Retirer Authenticated Users, ajouter G_Compta avec Apply Group Policy."
-      },
-      {
         "value": "ko1",
         "label": "Ajouter G_Compta dans la délégation seulement."
+      },
+      {
+        "value": "ko3",
+        "label": "Désactiver la GPO et l'activer au login."
       },
       {
         "value": "ko2",
         "label": "Modifier le DN de la GPO."
       },
       {
-        "value": "ko3",
-        "label": "Désactiver la GPO et l'activer au login."
+        "value": "ok",
+        "label": "Retirer Authenticated Users, ajouter G_Compta avec Apply Group Policy."
       }
     ]
   },

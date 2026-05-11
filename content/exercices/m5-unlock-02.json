@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "enable",
-        "label": "Enable-ADAccount"
-      },
-      {
-        "value": "unlock",
-        "label": "Unlock-ADAccount"
+        "value": "rien",
+        "label": "Aucun, il faut recréer le compte"
       },
       {
         "value": "set",
         "label": "Set-ADUser"
       },
       {
-        "value": "rien",
-        "label": "Aucun, il faut recréer le compte"
+        "value": "enable",
+        "label": "Enable-ADAccount"
+      },
+      {
+        "value": "unlock",
+        "label": "Unlock-ADAccount"
       }
     ]
   },

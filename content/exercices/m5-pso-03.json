@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "PSO1 (Precedence la plus basse l'emporte)"
+        "value": "ko3",
+        "label": "C'est aléatoire"
       },
       {
         "value": "ko1",
         "label": "PSO2 (Precedence la plus haute l'emporte)"
       },
       {
-        "value": "ko2",
-        "label": "Les deux fusionnent"
+        "value": "ok",
+        "label": "PSO1 (Precedence la plus basse l'emporte)"
       },
       {
-        "value": "ko3",
-        "label": "C'est aléatoire"
+        "value": "ko2",
+        "label": "Les deux fusionnent"
       }
     ]
   },

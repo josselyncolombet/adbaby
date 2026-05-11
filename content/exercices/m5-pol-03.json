@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Les mots de passe sont stockés en quasi-clair côté DC ; un accès à la base AD = mots de passe lisibles."
+        "value": "ko3",
+        "label": "Ça force tout le monde à changer son mdp tous les 30 jours."
       },
       {
-        "value": "ko1",
-        "label": "Ça empêche le SSO."
+        "value": "ok",
+        "label": "Les mots de passe sont stockés en quasi-clair côté DC ; un accès à la base AD = mots de passe lisibles."
       },
       {
         "value": "ko2",
         "label": "Ça augmente le coût Kerberos."
       },
       {
-        "value": "ko3",
-        "label": "Ça force tout le monde à changer son mdp tous les 30 jours."
+        "value": "ko1",
+        "label": "Ça empêche le SSO."
       }
     ]
   },

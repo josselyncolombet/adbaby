@@ -24,16 +24,16 @@
         "label": "TGT (Ticket Granting Ticket)"
       },
       {
-        "value": "tgs",
-        "label": "TGS (Ticket Granting Service)"
-      },
-      {
         "value": "nt",
         "label": "Un hash NTLM"
       },
       {
         "value": "session",
         "label": "Une clé de session AES"
+      },
+      {
+        "value": "tgs",
+        "label": "TGS (Ticket Granting Service)"
       }
     ]
   },

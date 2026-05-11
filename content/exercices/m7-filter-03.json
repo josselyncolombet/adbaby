@@ -27,12 +27,12 @@
         "label": "Rien, tout fonctionne."
       },
       {
-        "value": "ko2",
-        "label": "Le DC redémarre."
-      },
-      {
         "value": "ko3",
         "label": "Les postes désinstallent Windows."
+      },
+      {
+        "value": "ko2",
+        "label": "Le DC redémarre."
       }
     ]
   },

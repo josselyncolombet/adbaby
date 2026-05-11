@@ -2656,6 +2656,40 @@ exos.push({
 });
 
 // =====================================================================
+// Shuffle déterministe des options QCM / audit
+// =====================================================================
+// Pourquoi : si on laisse les options dans l'ordre d'écriture, la bonne
+// réponse est souvent en première position et l'élève le repère. On
+// mélange à partir d'un seed = id de l'exo : reproductible entre runs
+// (les tests et la prod voient toujours le même ordre).
+
+function seededShuffle<T>(arr: T[], seed: string): T[] {
+  let s = 2166136261;
+  for (let i = 0; i < seed.length; i++) {
+    s ^= seed.charCodeAt(i);
+    s = Math.imul(s, 16777619);
+  }
+  const rng = () => {
+    s = Math.imul(s ^ (s >>> 15), 2246822507);
+    s = Math.imul(s ^ (s >>> 13), 3266489909);
+    s ^= s >>> 16;
+    return ((s >>> 0) % 1_000_000) / 1_000_000;
+  };
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+for (const e of exos) {
+  const d = e.donnees as { options?: { value: string }[]; anomalies?: { value: string }[] } | undefined;
+  if (d?.options) d.options = seededShuffle(d.options, e.id);
+  if (d?.anomalies) d.anomalies = seededShuffle(d.anomalies, e.id);
+}
+
+// =====================================================================
 // Génération des fichiers
 // =====================================================================
 

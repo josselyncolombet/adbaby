@@ -23,16 +23,16 @@
         "label": "Une tentative de propagation latérale (worm SMB)"
       },
       {
-        "value": "ko1",
-        "label": "Du backup automatique"
+        "value": "ko3",
+        "label": "Un test légitime du support"
       },
       {
         "value": "ko2",
         "label": "Une mise à jour Windows"
       },
       {
-        "value": "ko3",
-        "label": "Un test légitime du support"
+        "value": "ko1",
+        "label": "Du backup automatique"
       }
     ]
   },

@@ -18,16 +18,16 @@
   "donnees": {
     "options": [
       {
-        "value": "lock",
-        "label": "Verrouillage de compte"
+        "value": "delete",
+        "label": "Suppression de compte"
       },
       {
         "value": "fail",
         "label": "Échec d'ouverture de session"
       },
       {
-        "value": "delete",
-        "label": "Suppression de compte"
+        "value": "lock",
+        "label": "Verrouillage de compte"
       },
       {
         "value": "rdp",

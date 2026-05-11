@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
+        "value": "everyone",
+        "label": "Everyone, anonymous compris"
+      },
+      {
         "value": "auth",
         "label": "Authenticated Users (par défaut)"
       },
       {
         "value": "domain-users",
         "label": "Domain Users uniquement"
-      },
-      {
-        "value": "everyone",
-        "label": "Everyone, anonymous compris"
       },
       {
         "value": "admins",

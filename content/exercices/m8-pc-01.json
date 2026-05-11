@@ -18,10 +18,6 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Un rapport HTML avec un score sur 100 et une liste de règles à corriger."
-      },
-      {
         "value": "ko1",
         "label": "Une copie de tous les mots de passe en clair."
       },
@@ -32,6 +28,10 @@
       {
         "value": "ko3",
         "label": "Une mise à jour automatique du domaine."
+      },
+      {
+        "value": "ok",
+        "label": "Un rapport HTML avec un score sur 100 et une liste de règles à corriger."
       }
     ]
   },

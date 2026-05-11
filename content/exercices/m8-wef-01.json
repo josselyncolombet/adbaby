@@ -18,20 +18,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Windows Event Forwarding"
-      },
-      {
         "value": "ko1",
         "label": "Windows Event Filter"
+      },
+      {
+        "value": "ko3",
+        "label": "Workstation Event Federation"
       },
       {
         "value": "ko2",
         "label": "Windows Encryption Framework"
       },
       {
-        "value": "ko3",
-        "label": "Workstation Event Federation"
+        "value": "ok",
+        "label": "Windows Event Forwarding"
       }
     ]
   },

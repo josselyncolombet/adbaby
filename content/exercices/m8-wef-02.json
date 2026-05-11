@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "push",
-        "label": "Source-initiated (push) — un seul flux sortant à autoriser depuis chaque poste"
-      },
-      {
         "value": "pull",
         "label": "Collector-initiated (pull) — il faut ouvrir les ports entrants sur chaque poste"
       },
       {
-        "value": "syslog",
-        "label": "Syslog UDP en clair"
-      },
-      {
         "value": "smb",
         "label": "Partage SMB sur le DC"
+      },
+      {
+        "value": "push",
+        "label": "Source-initiated (push) — un seul flux sortant à autoriser depuis chaque poste"
+      },
+      {
+        "value": "syslog",
+        "label": "Syslog UDP en clair"
       }
     ]
   },

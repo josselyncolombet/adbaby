@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
+        "value": "ko2",
+        "label": "Key Domain Cache"
+      },
+      {
         "value": "ok",
         "label": "Key Distribution Center"
       },
       {
         "value": "ko1",
         "label": "Kerberos Domain Controller"
-      },
-      {
-        "value": "ko2",
-        "label": "Key Domain Cache"
       },
       {
         "value": "ko3",

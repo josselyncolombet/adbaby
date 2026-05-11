@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Une KDS Root Key doit exister dans la forêt (`Add-KdsRootKey`)."
-      },
-      {
-        "value": "ko1",
-        "label": "Une licence Microsoft Premier."
-      },
-      {
         "value": "ko2",
         "label": "L'option 'Reversible Encryption' activée."
       },
       {
+        "value": "ok",
+        "label": "Une KDS Root Key doit exister dans la forêt (`Add-KdsRootKey`)."
+      },
+      {
         "value": "ko3",
         "label": "Un compte gMSA temporaire pour bootstrap."
+      },
+      {
+        "value": "ko1",
+        "label": "Une licence Microsoft Premier."
       }
     ]
   },

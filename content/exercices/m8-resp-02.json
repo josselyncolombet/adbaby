@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "On ferme les sessions actives et on perd les indices côté Kerberos avant de les avoir capturés."
-      },
-      {
         "value": "ko1",
         "label": "Cela viole le RGPD."
       },
       {
-        "value": "ko2",
-        "label": "Le DC redémarre tout seul."
+        "value": "ok",
+        "label": "On ferme les sessions actives et on perd les indices côté Kerberos avant de les avoir capturés."
       },
       {
         "value": "ko3",
         "label": "Le compte est définitivement bloqué."
+      },
+      {
+        "value": "ko2",
+        "label": "Le DC redémarre tout seul."
       }
     ]
   },

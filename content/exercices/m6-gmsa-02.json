@@ -18,20 +18,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Mot de passe long, géré et roté automatiquement par AD ; jamais stocké en clair."
-      },
-      {
-        "value": "ko1",
-        "label": "Le mot de passe ne change jamais, c'est plus simple."
-      },
-      {
         "value": "ko2",
         "label": "Le mot de passe est partagé entre plusieurs comptes humains."
       },
       {
+        "value": "ok",
+        "label": "Mot de passe long, géré et roté automatiquement par AD ; jamais stocké en clair."
+      },
+      {
         "value": "ko3",
         "label": "Le mot de passe est géré dans Excel."
+      },
+      {
+        "value": "ko1",
+        "label": "Le mot de passe ne change jamais, c'est plus simple."
       }
     ]
   },

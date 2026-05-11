@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
+        "value": "ko2",
+        "label": "Comptes joints à 1 groupe administratif."
+      },
+      {
         "value": "ok",
         "label": "Comptes anciennement admin dont les ACL héritent toujours d'AdminSDHolder ; faute classique d'audit."
       },
       {
         "value": "ko1",
         "label": "Comptes en cours d'élévation par un attaquant."
-      },
-      {
-        "value": "ko2",
-        "label": "Comptes joints à 1 groupe administratif."
       },
       {
         "value": "ko3",

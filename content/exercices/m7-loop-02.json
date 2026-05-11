@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
+        "value": "ko2",
+        "label": "Désactive Computer Config."
+      },
+      {
         "value": "ok",
         "label": "Ignore totalement la User Config de l'utilisateur ; seule la User Config liée au poste s'applique."
       },
       {
         "value": "ko1",
         "label": "Fusionne les deux User Config."
-      },
-      {
-        "value": "ko2",
-        "label": "Désactive Computer Config."
       },
       {
         "value": "ko3",

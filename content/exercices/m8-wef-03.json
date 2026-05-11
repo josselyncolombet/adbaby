@@ -21,32 +21,32 @@
   "donnees": {
     "anomalies": [
       {
-        "value": "4624",
-        "label": "4624 — ouverture de session réussie"
-      },
-      {
-        "value": "4625",
-        "label": "4625 — échec d'ouverture de session"
-      },
-      {
         "value": "4720",
         "label": "4720 — création de compte"
-      },
-      {
-        "value": "4732",
-        "label": "4732 — ajout dans un groupe domaine-local"
-      },
-      {
-        "value": "4740",
-        "label": "4740 — verrouillage de compte"
       },
       {
         "value": "1102",
         "label": "1102 — effacement du journal de sécurité (IoC critique)"
       },
       {
+        "value": "4732",
+        "label": "4732 — ajout dans un groupe domaine-local"
+      },
+      {
         "value": "4634",
         "label": "4634 — fermeture de session (volume énorme, peu utile en baseline)"
+      },
+      {
+        "value": "4740",
+        "label": "4740 — verrouillage de compte"
+      },
+      {
+        "value": "4625",
+        "label": "4625 — échec d'ouverture de session"
+      },
+      {
+        "value": "4624",
+        "label": "4624 — ouverture de session réussie"
       }
     ]
   },

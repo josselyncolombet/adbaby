@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "On court-circuite le groupe global ; on mélange identité et permission, et on rend l'audit beaucoup plus difficile à grande échelle."
-      },
-      {
-        "value": "ko1",
-        "label": "Aucun problème, c'est juste différent."
+        "value": "ko3",
+        "label": "Faute parce qu'il faut systématiquement Universal."
       },
       {
         "value": "ko2",
         "label": "Faute parce qu'un DL ne peut pas avoir de membres."
       },
       {
-        "value": "ko3",
-        "label": "Faute parce qu'il faut systématiquement Universal."
+        "value": "ok",
+        "label": "On court-circuite le groupe global ; on mélange identité et permission, et on rend l'audit beaucoup plus difficile à grande échelle."
+      },
+      {
+        "value": "ko1",
+        "label": "Aucun problème, c'est juste différent."
       }
     ]
   },

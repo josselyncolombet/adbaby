@@ -18,8 +18,12 @@
   "donnees": {
     "anomalies": [
       {
-        "value": "logon-nuit",
-        "label": "Pic de connexions admin entre 23h et 5h"
+        "value": "user-sleep",
+        "label": "Un utilisateur en arrêt maladie ne se connecte pas pendant 3 jours"
+      },
+      {
+        "value": "smb-scan",
+        "label": "Pic de connexions SMB d'un poste vers tous les autres"
       },
       {
         "value": "creation-da",
@@ -30,12 +34,8 @@
         "label": "Désactivation massive de Windows Defender via GPO"
       },
       {
-        "value": "smb-scan",
-        "label": "Pic de connexions SMB d'un poste vers tous les autres"
-      },
-      {
-        "value": "user-sleep",
-        "label": "Un utilisateur en arrêt maladie ne se connecte pas pendant 3 jours"
+        "value": "logon-nuit",
+        "label": "Pic de connexions admin entre 23h et 5h"
       }
     ]
   },

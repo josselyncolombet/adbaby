@@ -23,16 +23,16 @@
         "label": "GPO créée par un compte qui n'a normalement pas le droit"
       },
       {
-        "value": "domain-root",
-        "label": "Liée au domaine root, donc s'applique partout"
+        "value": "nom-banal",
+        "label": "Nom de GPO banal (peu suspect par lui-même)"
       },
       {
         "value": "timing",
         "label": "Création peu avant l'incident"
       },
       {
-        "value": "nom-banal",
-        "label": "Nom de GPO banal (peu suspect par lui-même)"
+        "value": "domain-root",
+        "label": "Liée au domaine root, donc s'applique partout"
       }
     ]
   },

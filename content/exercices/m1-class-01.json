@@ -18,10 +18,6 @@
   "donnees": {
     "options": [
       {
-        "value": "comp",
-        "label": "Un poste ou serveur joint au domaine"
-      },
-      {
         "value": "user",
         "label": "Un compte utilisateur"
       },
@@ -32,6 +28,10 @@
       {
         "value": "ou",
         "label": "Une unité d'organisation"
+      },
+      {
+        "value": "comp",
+        "label": "Un poste ou serveur joint au domaine"
       }
     ]
   },

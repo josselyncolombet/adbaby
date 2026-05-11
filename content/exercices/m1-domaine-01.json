@@ -20,20 +20,20 @@
   "donnees": {
     "options": [
       {
-        "value": "dc",
-        "label": "Le contrôleur de domaine (DC)"
+        "value": "dns",
+        "label": "Le serveur DNS"
       },
       {
         "value": "ad",
         "label": "L'objet domaine"
       },
       {
-        "value": "fs",
-        "label": "Le serveur de fichiers"
+        "value": "dc",
+        "label": "Le contrôleur de domaine (DC)"
       },
       {
-        "value": "dns",
-        "label": "Le serveur DNS"
+        "value": "fs",
+        "label": "Le serveur de fichiers"
       }
     ]
   },

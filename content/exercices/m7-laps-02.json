@@ -23,16 +23,16 @@
         "label": "Chaque poste a un mot de passe admin local unique et roté ; un hash compromis n'ouvre que ce poste."
       },
       {
+        "value": "ko3",
+        "label": "LAPS supprime les comptes admin locaux."
+      },
+      {
         "value": "ko1",
         "label": "LAPS désactive NTLM partout."
       },
       {
         "value": "ko2",
         "label": "LAPS bloque les ouvertures de session."
-      },
-      {
-        "value": "ko3",
-        "label": "LAPS supprime les comptes admin locaux."
       }
     ]
   },

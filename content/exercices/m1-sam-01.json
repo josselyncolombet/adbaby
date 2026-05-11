@@ -23,16 +23,16 @@
         "label": "j.dupont"
       },
       {
-        "value": "upn",
-        "label": "j.dupont@pme.local"
-      },
-      {
         "value": "ni",
         "label": "Aucun des deux, c'est un alias"
       },
       {
         "value": "deux",
         "label": "Les deux sont des UPN"
+      },
+      {
+        "value": "upn",
+        "label": "j.dupont@pme.local"
       }
     ]
   },

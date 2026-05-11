@@ -19,20 +19,20 @@
   "donnees": {
     "anomalies": [
       {
-        "value": "fix-pne",
-        "label": "Désactiver PasswordNeverExpires sur les comptes admin"
+        "value": "reinstall",
+        "label": "Réinstaller Windows sur tous les postes"
       },
       {
         "value": "fix-protected",
         "label": "Ajouter les admins au groupe Protected Users"
       },
       {
-        "value": "fix-ntlm",
-        "label": "Désactiver NTLMv1 dans la stratégie de sécurité"
+        "value": "fix-pne",
+        "label": "Désactiver PasswordNeverExpires sur les comptes admin"
       },
       {
-        "value": "reinstall",
-        "label": "Réinstaller Windows sur tous les postes"
+        "value": "fix-ntlm",
+        "label": "Désactiver NTLMv1 dans la stratégie de sécurité"
       }
     ]
   },

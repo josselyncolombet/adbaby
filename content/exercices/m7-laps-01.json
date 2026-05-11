@@ -22,16 +22,16 @@
         "label": "Gérer et roter automatiquement le mot de passe administrateur local de chaque poste, stocké dans AD."
       },
       {
+        "value": "ko3",
+        "label": "Désactiver le compte Administrateur local."
+      },
+      {
         "value": "ko1",
         "label": "Stocker tous les mots de passe utilisateurs en clair."
       },
       {
         "value": "ko2",
         "label": "Synchroniser les comptes Linux et Windows."
-      },
-      {
-        "value": "ko3",
-        "label": "Désactiver le compte Administrateur local."
       }
     ]
   },

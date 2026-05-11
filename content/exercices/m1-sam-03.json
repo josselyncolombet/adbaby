@@ -19,10 +19,6 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "emilie.bertrand@pme.local"
-      },
-      {
         "value": "ko1",
         "label": "Émilie.Bertrand@pme.local"
       },
@@ -33,6 +29,10 @@
       {
         "value": "ko3",
         "label": "bertrand.emilie@pme.local"
+      },
+      {
+        "value": "ok",
+        "label": "emilie.bertrand@pme.local"
       }
     ]
   },

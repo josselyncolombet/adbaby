@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
-        "value": "rep",
-        "label": "Il est répliqué automatiquement par AD"
+        "value": "rien",
+        "label": "Il n'existe que sur DC01"
       },
       {
         "value": "manuel",
         "label": "Tu dois pousser la réplication manuellement"
       },
       {
-        "value": "rien",
-        "label": "Il n'existe que sur DC01"
+        "value": "rep",
+        "label": "Il est répliqué automatiquement par AD"
       },
       {
         "value": "import",

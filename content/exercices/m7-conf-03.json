@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "computer",
-        "label": "Computer (proxy:8080)"
+        "value": "merge",
+        "label": "Les deux fusionnent"
       },
       {
         "value": "user",
         "label": "User (direct)"
       },
       {
-        "value": "merge",
-        "label": "Les deux fusionnent"
-      },
-      {
         "value": "ignore",
         "label": "Aucun ne s'applique"
+      },
+      {
+        "value": "computer",
+        "label": "Computer (proxy:8080)"
       }
     ]
   },

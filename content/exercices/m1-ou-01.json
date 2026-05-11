@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "L'OU organise l'arbre AD et porte des GPO ; le groupe sert aux permissions."
-      },
-      {
-        "value": "ko1",
-        "label": "L'OU sert aux permissions ; le groupe organise l'arbre."
+        "value": "ko3",
+        "label": "Une OU est un compte machine spécial."
       },
       {
         "value": "ko2",
         "label": "OU et groupes sont équivalents."
       },
       {
-        "value": "ko3",
-        "label": "Une OU est un compte machine spécial."
+        "value": "ok",
+        "label": "L'OU organise l'arbre AD et porte des GPO ; le groupe sert aux permissions."
+      },
+      {
+        "value": "ko1",
+        "label": "L'OU sert aux permissions ; le groupe organise l'arbre."
       }
     ]
   },

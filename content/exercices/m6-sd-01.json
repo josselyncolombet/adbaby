@@ -18,12 +18,12 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "AdminSDHolder réécrase les ACL des comptes admins toutes les heures (mécanisme SDPROP)."
-      },
-      {
         "value": "ko1",
         "label": "Bug Windows, à patcher."
+      },
+      {
+        "value": "ok",
+        "label": "AdminSDHolder réécrase les ACL des comptes admins toutes les heures (mécanisme SDPROP)."
       },
       {
         "value": "ko2",

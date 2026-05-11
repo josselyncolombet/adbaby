@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Vérifier qu'il n'est plus dans aucun groupe admin, supprimer/zéroter l'attribut adminCount, réactiver l'héritage des ACL."
-      },
-      {
-        "value": "ko1",
-        "label": "Désactiver le compte."
-      },
-      {
         "value": "ko2",
         "label": "Le supprimer puis le recréer immédiatement."
       },
       {
         "value": "ko3",
         "label": "Mettre Protected Users."
+      },
+      {
+        "value": "ko1",
+        "label": "Désactiver le compte."
+      },
+      {
+        "value": "ok",
+        "label": "Vérifier qu'il n'est plus dans aucun groupe admin, supprimer/zéroter l'attribut adminCount, réactiver l'héritage des ACL."
       }
     ]
   },

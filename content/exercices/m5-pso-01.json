@@ -18,10 +18,6 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Password Settings Object"
-      },
-      {
         "value": "ko1",
         "label": "Privileged Security Object"
       },
@@ -32,6 +28,10 @@
       {
         "value": "ko3",
         "label": "Permissive Security Override"
+      },
+      {
+        "value": "ok",
+        "label": "Password Settings Object"
       }
     ]
   },

@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
+        "value": "ou",
+        "label": "Une OU spécifique"
+      },
+      {
         "value": "foret",
         "label": "Toute la forêt (tous les domaines de la forêt)"
       },
       {
         "value": "domaine",
         "label": "Le domaine racine uniquement"
-      },
-      {
-        "value": "ou",
-        "label": "Une OU spécifique"
       },
       {
         "value": "site",

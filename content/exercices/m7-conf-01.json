@@ -19,16 +19,16 @@
   "donnees": {
     "options": [
       {
+        "value": "both",
+        "label": "Les deux"
+      },
+      {
         "value": "computer",
         "label": "Computer Configuration"
       },
       {
         "value": "user",
         "label": "User Configuration"
-      },
-      {
-        "value": "both",
-        "label": "Les deux"
       },
       {
         "value": "wmi",

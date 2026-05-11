@@ -19,20 +19,20 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Ajout dans un groupe administratif (Administrators, Domain Admins, …)"
+        "value": "ko3",
+        "label": "Ajout dans Authenticated Users"
       },
       {
-        "value": "ko1",
-        "label": "Ajout dans Domain Users"
+        "value": "ok",
+        "label": "Ajout dans un groupe administratif (Administrators, Domain Admins, …)"
       },
       {
         "value": "ko2",
         "label": "Ajout dans un groupe de distribution mail"
       },
       {
-        "value": "ko3",
-        "label": "Ajout dans Authenticated Users"
+        "value": "ko1",
+        "label": "Ajout dans Domain Users"
       }
     ]
   },

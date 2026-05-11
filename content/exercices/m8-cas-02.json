@@ -19,10 +19,6 @@
   "donnees": {
     "anomalies": [
       {
-        "value": "isoler-vlan",
-        "label": "Isoler les VLAN où la propagation est observée"
-      },
-      {
         "value": "disable-comptes",
         "label": "Désactiver les comptes admin et comptes compromis"
       },
@@ -33,6 +29,10 @@
       {
         "value": "eteindre-poste",
         "label": "Éteindre brutalement les postes (faux : on perd la RAM)"
+      },
+      {
+        "value": "isoler-vlan",
+        "label": "Isoler les VLAN où la propagation est observée"
       },
       {
         "value": "appeler-cnil",

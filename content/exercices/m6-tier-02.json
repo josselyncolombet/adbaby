@@ -27,12 +27,12 @@
         "label": "C'est juste lent."
       },
       {
-        "value": "ko2",
-        "label": "Cela viole les licences Windows."
-      },
-      {
         "value": "ko3",
         "label": "Cela crée un cookie GPO indésirable."
+      },
+      {
+        "value": "ko2",
+        "label": "Cela viole les licences Windows."
       }
     ]
   },

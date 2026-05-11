@@ -19,12 +19,12 @@
   "donnees": {
     "options": [
       {
-        "value": "ok",
-        "label": "Corriger les comptes (notamment admin) dont le mot de passe est paramétré pour ne jamais expirer."
-      },
-      {
         "value": "ko1",
         "label": "Désactiver PingCastle."
+      },
+      {
+        "value": "ok",
+        "label": "Corriger les comptes (notamment admin) dont le mot de passe est paramétré pour ne jamais expirer."
       },
       {
         "value": "ko2",
